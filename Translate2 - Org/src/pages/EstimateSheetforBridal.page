@@ -1,0 +1,784 @@
+<apex:page sidebar="false" standardController="AccountMaster__c" extensions="account">
+
+<div  style="float:center; margin-left:450px; width:600px; ">
+<html><body><h1><apex:image url="https://divya-dev-ed--c.ap1.content.force.com/servlet/servlet.ImageServer?id=01590000001AlWn&oid=00D90000000eKAz&lastMod=1364810724000" height="15%" width="15%"/></h1></body></html>
+</div> <br/>
+<div style="float:center; margin-left:450px; width:600px; font-size:25px;font-family:Arial Blue; ">
+<html>
+  <body >
+    <h1 > 御見積書</h1>
+  </body>
+</html> 
+</div> <br/>
+
+<table border="1" frame="box" rules="all" width="100%" cellspacing="0" cellpadding="0" style="font-size:13px;font-family:Arial Blue;" >
+    <tr>
+         <th>&nbsp;&nbsp;</th>   
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>   
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+        
+         <th>発行日</th>
+         <apex:form >
+         <th> <apex:inputText /></th>
+          </apex:form>
+    </tr>
+    <tr>
+        <th>様　　　　　　様</th>
+          
+        <th>御両家</th>
+        <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         <th>&nbsp;&nbsp;</th>
+         
+        <th>会場</th>
+        <th>富月殿</th>
+     </tr>
+     <tr>
+      <th>41</th>
+          <th>名様</th>
+          <th>&nbsp; &nbsp;</th>
+         
+          <th>&nbsp; &nbsp;</th>
+          <th>&nbsp; &nbsp;</th> 
+          <th>&nbsp; &nbsp;</th>
+          <th>&nbsp; &nbsp;</th>
+          <th>&nbsp;&nbsp;</th>
+          
+         <th>担当</th>
+     </tr>
+     <tr>
+         <th>&nbsp; &nbsp;</th>
+          <th>&nbsp; &nbsp;</th>
+          <th>&nbsp; &nbsp;</th>
+          <th>&nbsp; &nbsp;</th>
+           <th>&nbsp; &nbsp;</th>
+            <th>&nbsp; &nbsp;</th>
+            <th>&nbsp; &nbsp;</th>
+            <th>&nbsp;&nbsp;</th>
+             
+              
+         <th>お見積り有効期限：1ヶ月</th>
+     </tr> 
+     <th>&nbsp; &nbsp;</th>
+             <th>&nbsp; &nbsp;</th>
+     <table border="1" frame="box" rules="all" width="100%" cellspacing="5px;" cellpadding="5px;" style="font-size:15px;font-family:Arial Blue; font-color:Blue;" >
+         
+         <tr>
+             <th><span style="color:#FF3333">種目</span></th> 
+            
+             <th><span style="color:#FF3333">内容</span></th> 
+           
+             <th><span style="color:#FF3333">税込単価</span></th> 
+             
+             <th><span style="color:#FF3333">数量</span></th> 
+             
+             <th><span style="color:#FF3333">税込金額</span></th> 
+            
+             <th><span style="color:#FF3333">備　考</span></th> 
+         </tr>
+         <th>&nbsp;</th>
+        
+         
+         <tr>
+             <th>&nbsp;</th>
+            <th> 和食会席</th>
+       
+            <th>15000</th>
+           
+            <th>41</th>
+            
+            <th>615000</th>
+       
+            <th> 陣屋　ご婚礼　会席メニュー</th>
+         </tr>
+         <tr>
+             <th>お料理</th>
+            <th> お子様膳 A</th>
+       
+            <th>5000</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+            <th> ステーキ・祝い鯛 付き</th>
+         </tr>
+         
+         <tr>
+             <th>&nbsp;</th>
+            <th> お子様膳 B</th>
+       
+            <th>3000</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+            <th> ステーキ 付き</th>
+         </tr>
+        <tr>
+             <th>&nbsp;</th>
+            <th> ウェディングケーキ</th>
+       
+            <th>1050</th>
+           
+            <th>41</th>
+            
+            <th>43050</th>
+       
+            <th> オリジナル生ケーキ</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+            <th> セット ドリンク</th>
+       
+            <th>3800</th>
+           
+            <th>41</th>
+            
+            <th>155800</th>
+       
+            <th> ビール・ウィスキー・焼酎（麦、芋）・日本酒・ワイン・ソフトドリンク（ｵﾚﾝｼﾞ･アップル・烏龍茶</th>
+         </tr>
+             
+         <tr>
+             <th>お飲物</th>
+            <th> 式前ウェルカム</th>
+       
+            <th>&nbsp;</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+            <th>セット ドリンクに含む</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+            <th> 乾杯酒</th>
+       
+            <th>3000</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+            <th> スパークリングワイン</th>
+         </tr>
+        <tr>
+             <th>&nbsp;</th>
+            <th> 未成年用セット ドリンク</th>
+       
+            <th>1800</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+            <th> ソフトドリンク（ｵﾚﾝｼﾞ･アップル・烏龍茶）</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+             <th> 小計①(① subtotal)</th>
+             <th>&nbsp;</th>
+             <th>&nbsp;</th>
+             <th>813850</th>
+             <th>&nbsp;</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+            <th> 会場使用料</th>
+       
+            <th>90000</th>
+           
+            <th>1</th>
+            
+            <th>90000</th>
+       
+            <th> 会場（プロジェクター設備）、ブライズルーム、待合室、ゲスト着替室他</th>
+         </tr>
+         <tr>
+             <th>会場費</th>
+            <th>音響照明使用料</th>
+       
+            <th>52500</th>
+           
+            <th>1</th>
+            
+            <th>52500</th>
+       
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+            <th>控室料</th>
+       
+            <th>10500</th>
+           
+            <th>2</th>
+            
+            <th>21000</th>
+       
+            <th> ご両家、親族控え室(ご</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>装飾</th>
+            <th>&nbsp;</th>
+       
+            <th>&nbsp;</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>0</th>
+       
+         </tr>
+         <tr>
+             
+            <th>&nbsp;</th>
+       
+            <th>テーブルコ―ディネート料</th>
+           
+            <th>1000</th>
+            
+            <th>41</th>
+            <th>41000</th>
+            <th>テーブルクロス・ナフキン（約３０種類以上の中よりお選びいただけます</th>
+       
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             
+            <th>挙式</th>
+       
+            <th>神前挙式</th>
+           
+            <th>100000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>神前挙式一式、式場入口装花 含む</th>
+       
+         </tr>
+         <tr>
+             
+            <th>&nbsp;</th>
+       
+            <th>人前式</th>
+           
+            <th>100000</th>
+            
+            <th>1</th>
+            <th>100000</th>
+            <th>司式者・証明書・式次第、式場入口装花含む</th>
+       
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>メインテーブル装花</th>
+           
+            <th>36750</th>
+            
+            <th>1</th>
+            <th>36750</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ゲストテーブル装花</th>
+           
+            <th>4200</th>
+            
+            <th>7</th>
+            <th>29400</th>
+            
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ブーケ</th>
+           
+            <th>26250</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>和装・ドレス用ブーケ／ラウンド型</th>
+            
+            
+         </tr>
+         <tr>
+              <th>装花</th>
+       
+            <th>ブートニア</th>
+           
+            <th>3150</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ヘッドドレス</th>
+           
+            <th>4200</th>
+            
+            <th>1</th>
+            <th>4200</th>
+            <th>お花については要相談</th>
+            
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>両親用花束</th>
+           
+            <th>8400</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ケーキ装花</th>
+           
+            <th>10500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>ケーキテーブルフラワー／ナイフ装花込み</th>
+            
+            
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>新婦お着付け代</th>
+           
+            <th>140000</th>
+            
+            <th>1</th>
+            <th>140000</th>
+            <th>和装２点分、当日ヘアメイク・お着付、お引き上げ</th>
+            
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>新郎お着付け代</th>
+           
+            <th>50000</th>
+            
+            <th>1</th>
+            <th>50000</th>
+            <th>お着付け、お引き上げ</th>
+         
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ヘアメイクリハーサル</th>
+           
+            <th>23625</th>
+            
+            <th>1</th>
+            <th>23625</th>
+            <th>２シーン（和装２点、白無垢・色打ち掛け）[シ ー ン</th>
+         
+         </tr>
+         <tr>
+              <th>美容</th>
+       
+            <th>留袖着付け</th>
+           
+            <th>8400</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ゲストヘアメイク</th>
+           
+            <th>10500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>ヘアーセット（ショート）</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>ネイル</th>
+           
+            <th>8000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            
+         </tr>
+         <tr>
+              <th>&nbsp;</th>
+       
+            <th>介添え料金</th>
+           
+            <th>11500</th>
+            
+            <th>1   </th>
+            <th>11500</th>
+            
+            
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>招待状</th>
+           
+            <th>472</th>
+            
+            <th>28 </th>
+            <th>13216</th>
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>席次表</th>
+           
+            <th>682</th>
+            
+            <th>28 </th>
+            <th>19096</th>
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>席札</th>
+           
+            <th>189</th>
+            
+            <th>41 </th>
+            <th>7749</th>
+            
+         </tr>
+         <tr>
+             <th>印刷物</th>
+       
+            <th>メニュー</th>
+           
+            <th>367</th>
+            
+            <th>41 </th>
+            <th>15047</th>
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>筆耕料</th>
+           
+            <th>263</th>
+            
+            <th>28</th>
+            <th>7364</th>
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>芳名帳</th>
+           
+            <th>3150</th>
+            
+            <th>1</th>
+            <th>3150</th>
+            
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>集合写真</th>
+           
+            <th>21000</th>
+            
+            <th>1</th>
+            <th>21000</th>
+            <th>親族集合写真・ワンポーズ　２冊セット</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>記念写真</th>
+           
+            <th>18900</th>
+            
+            <th>1</th>
+            <th>18900</th>
+            <th>新郎、新婦・ワンポーズ　２冊セット</th>
+         </tr>
+         <tr>
+             <th>写真  ビデオ撮影</th>
+       
+            <th>アルバム</th>
+           
+            <th>157500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>16ページ、30カット</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>ビデオ撮影</th>
+           
+            <th>158000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>当日ビデオノーマル 編集 （メイク・挙式・披露宴）／約８０分</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>プロフィールDVD</th>
+           
+            <th>60000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>写真４０枚使用／約８分</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>司会</th>
+           
+            <th>70000</th>
+            
+            <th>1</th>
+            <th>70000</th>
+            <th>事前打合せ ・ 披露宴司会進行 含む</th>
+         </tr>
+         <tr>
+             <th>演出</th>
+       
+            <th>祝い餅</th>
+           
+            <th>21000</th>
+            
+            <th>0</th>
+            <th>0</th>
+            <th>陣屋オリジナル演出</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>祝い餅</th>
+           
+            <th>3150</th>
+            
+            <th>28</th>
+            <th>88200</th>
+           
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>引菓子</th>
+           
+            <th>1050</th>
+            
+            <th>28</th>
+            <th>29400</th>
+           
+         </tr>
+         <tr>
+             <th>引出物</th>
+       
+            <th>鰹節</th>
+           
+            <th>1050</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+           
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>&nbsp;</th>
+           
+            <th>&nbsp;</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+           
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>ペーパーバッグ</th>
+           
+            <th>420</th>
+            
+            <th>28</th>
+            <th>11760</th>
+            <th>陣屋オリジナルバッグ</th>
+           
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>新婦和装</th>
+           
+            <th>400000</th>
+            
+            <th>1</th>
+            <th>400000</th>
+            <th>白無垢１点、打ち掛け１点</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>新郎和装</th>
+           
+            <th>50000</th>
+            
+            <th>1</th>
+            <th>50000</th>
+            <th>紋付袴１点</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>新婦和装小物</th>
+           
+            <th>18500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>綿帽子、掛下、花嫁５点セット</th>
+         </tr>
+         <tr>
+             <th>衣裳</th>
+       
+            <th>新郎新婦足袋／新婦肌着</th>
+           
+            <th>4700</th>
+            
+            <th>1</th>
+            <th>4700</th>
+            
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>ドレスプランⅠ</th>
+           
+            <th>262500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>新婦ドレス１点 ¥294,000まで、新郎１点 ¥105,000まで</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>モーニング</th>
+           
+            <th>21000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>列席者 衣装レンタル</th>
+         </tr>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>留袖</th>
+           
+            <th>35000</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>　　　　　同上</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+       
+            <th>新婦衣裳一式</th>
+           
+            <th>52500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>衣装 お持ち込み １点につき</th>
+         </tr>
+         <tr>
+             <th>保管料</th>
+       
+            <th>新郎衣裳一式</th>
+           
+            <th>31500</th>
+            
+            <th>&nbsp;</th>
+            <th>0</th>
+            <th>　　　　　同上</th>
+            
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+             <th>小計②(② </th>
+             <th>&nbsp;</th>
+             <th>&nbsp;</th>
+             <th>1359557</th>
+             <th>&nbsp;</th>
+         </tr>
+         <th>&nbsp;</th>
+         <tr>
+             <th>&nbsp;</th>
+             <th>&nbsp; </th>
+             <th>総額（小計①＋小計②）</th>
+             <th>&nbsp;</th>
+             <th>2173407</th>
+             
+         </tr>
+     </table>
+    
+</table>
+
+
+</apex:page>
