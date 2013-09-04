@@ -1,0 +1,239 @@
+<apex:page standardcontroller="Plan__c" extensions="PlanProductSetup"  >
+
+<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.blockUI.js')}"/>
+<apex:includeScript value="{!$Resource.CommJs}"/>
+<style>
+.totalRowNumCell {
+    text-align: right;
+}
+</style>
+<script>
+$=jQuery.noConflict();
+
+function bindEvents() {
+    // clear the one row info
+    var clearItemIdArr=new Array(':hidProductId',':hidProductNm',':productName',':orderNums', ':serviceRate', ':taxRateType',':price',':amoutPriceIncTax',':freePrice',':diffPrice');
+    // Clear Button
+    $("input[id='clearProduct']").click(function() {
+        currRowIndex = $(this).attr("rowindex");
+        //dispExtendImg(currRowIndex,"hidden"); // 展開imgを非表示にする
+        for (var i = 0; i < clearItemIdArr.length; i++){
+            clearObj = $("[id$=':planDetailTable:" + currRowIndex + clearItemIdArr[i] + "']");
+            if (clearObj.is(":checkbox")) {
+                clearObj.removeAttr('checked');
+            } else if (clearObj.is("select")) {
+                clearObj.get(0).selectedIndex = 0;
+            } else if (clearObj.is("span")) {
+                clearObj.text("");
+            } else {
+                clearObj.val("");
+            }
+        }
+    });
+
+    $("img[name='productPopup']").click(function() {
+        currRowIndex = $(this).attr("rowindex");
+        var dumyField = $("#dumyfieldId").get(0);
+        // 引き渡し値を設定して、選択画面を開く
+        ctrlNm = $("input:text[id$=':" + currRowIndex + ":productName']").get(0);
+        ctrlId = $("input:hidden[id$=':" + currRowIndex + ":hidProductId']").get(0);
+        ctrlHidNm = $("input:hidden[id$=':" + currRowIndex + ":hidProductNm']").get(0);
+        ctrlPriceId = $("span[id$=':" + currRowIndex + ":price']").get(0);
+        ctrlOrderNumId = dumyField;
+        ctrlTaxRate = $("input:text[id$=':" + currRowIndex + ":taxRateType']").get(0);;
+        ctrlHidTaxRate = dumyField;
+        ctrlServiceTaxRate = $("input:text[id$=':" + currRowIndex + ":serviceRate']").get(0);   // サービス料金
+        ctrlHidServiceTaxRate = dumyField;
+        ctrlSpecialTax = dumyField;
+        ctrlHidSpecialTax = dumyField;
+        ctrlHidActionType = dumyField;
+        var openUrl = "/apex/ProductSearch?idx=" + currRowIndex;
+        // 呼び出し順番とPOPUP画面の設定順番は必ず一致するが必要
+		objs = new Array(ctrlNm, ctrlId, ctrlHidNm, ctrlPriceId, ctrlOrderNumId,
+			ctrlTaxRate, ctrlHidTaxRate, ctrlServiceTaxRate, ctrlHidServiceTaxRate, ctrlSpecialTax, ctrlHidSpecialTax, ctrlHidActionType);
+		commUtils.popup(openUrl, "SearchProductInfo", objs, null, null, window.popupCallback);
+    });
+
+    // 数字だけ入力可能の制御
+    $("input[id$=':freePrice']").keyup(function(){
+        $(this).val($(this).val().replace(/[^\d\,]/g,''));
+    }).bind("paste",function(){
+        $(this).val($(this).val().replace(/[^\d\,]/g,''));
+    }).css("ime-mode", "disabled");
+
+    // 入力金額の自動合計処理を行う
+    $("input[id$=':freePrice']").blur( function () {
+        var sumPrice = 0;
+        $("input[id$=':freePrice']").each(function(index) {
+            sumPrice += 1 * ($(this).val().replace(/[^\d]/g,''));
+        });
+        // 明細金額合計設定を行う
+        $("span[id$=':priceSumVal']").text(sumPrice);
+        // 差額設定を行う
+        var planPrice = 1 * $("#planPrice").val();
+        //var diffVal = 
+        $("span[id$=':priceDiffVal']").text(planPrice - sumPrice);
+    });
+}
+// Gobal Var
+var currRowIndex = 0;
+function popupCallback() {    // 自動項目Focus
+    $("input[id$=':" + currRowIndex + ":freePrice']").focus();
+}
+jQuery(document).ready(function() {
+    bindEvents();
+});
+</script>
+
+<apex:form id="planDetailForm" >
+
+<apex:pageblock title="プラン情報" id="planBlock" >
+	<apex:pageMessages />
+    <!-- 概要情報 -->
+    <apex:pageBlockSection columns="2">
+        <!--　プラン名 -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="{!$ObjectType.Plan__c.Fields.Name.label}" />
+            <apex:outputField value="{!planInfo.name}" />
+        </apex:pageblockSectionItem>
+        <!-- プランNO -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="{!$ObjectType.Plan__c.Fields.PlanNo__c.label}" />
+            <apex:outputField value="{!planInfo.PlanNo__c}" />
+        </apex:pageblockSectionItem>
+        <!-- プラン金額 -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="{!$ObjectType.Plan__c.Fields.Price__c.label}" />
+            <apex:outputField value="{!planInfo.Price__c}" />
+        </apex:pageblockSectionItem>
+        <!-- 商品積み上げ金額 -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="明細金額合計" />
+            <apex:outputtext value="{0,number, ##,###}" id="priceSumVal">
+              <apex:param value="{!productInputAmout}" />
+            </apex:outputtext>
+        </apex:pageblockSectionItem>
+		<!-- 消費税 -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="{!$ObjectType.Plan__c.Fields.JmstRef__c.label}" />
+            <apex:outputField value="{!planInfo.JmstRef__r.TaxRate__c}" />
+        </apex:pageblockSectionItem>
+        <!-- 差額 -->
+        <apex:pageblockSectionItem helpText="{!$ObjectType.Plan__c.Fields.Price__c.label} - 明細金額合計">
+            <apex:outputlabel value="差額" />
+            <apex:outputtext value="{0,number, ##,###}" id="priceDiffVal">
+              <apex:param value="{!NULLVALUE(planInfo.Price__c,0) - productInputAmout}" />
+            </apex:outputtext>
+        </apex:pageblockSectionItem>
+		<!-- サービス料 -->
+        <apex:pageblockSectionItem >
+            <apex:outputlabel value="{!$ObjectType.Plan__c.Fields.ServiceRate__c.label}" />
+            <apex:outputField value="{!planInfo.ServiceRate__c}" />
+        </apex:pageblockSectionItem>
+
+
+    </apex:pageBlockSection>
+</apex:pageblock>
+
+<apex:pageblock title="明細設定情報" id="leadInfoList" >
+    <apex:pageBlockButtons location="top">
+        <!-- 保存  -->
+        <apex:commandButton action="{!savePlanDetail}" value="保存" onClick="blockUi(this.form)" style="width:100px" />
+        <!-- 戻る -->
+        <apex:commandButton action="{!gotoBlack}" value="戻る" immediate="true" style="width:100px" />
+    </apex:pageBlockButtons>
+	<input type="hidden" id="dumyfieldId" />
+	<input type="hidden" value="{!planInfo.Price__c}" id="planPrice"  />
+    <apex:pageBlockTable value="{!planDetailList}" var="t" id="planDetailTable" columnsWidth="20px, 200px">
+	 	<apex:column headerValue="アクション" >
+			<input type="button" title="クリア" value="クリア" id="clearProduct" rowIndex = "{!t.rowNo}" />
+		</apex:column>
+	 	<!-- 商品コード -->
+        <apex:column headerValue="{!$ObjectType.PlanDetail__c.Fields.AccountMasterRef__c.label}">
+            <span class="lookupInput">
+                <input type="text" value="{!t.productNm}" id=":planDetailTable:{!t.rowNo}:productName" size="40"
+                    readonly="readonly" style="background-color:#f1f1f1; background-image: url({!URLFOR($Resource.reportFiles, 'img/blank')});" />
+                <img title="" onmouseover="this.className = 'lookupIconOn';this.className = 'lookupIconOn';"
+	              onmouseout="this.className = 'lookupIcon';this.className = 'lookupIcon';"
+	              onfocus="this.className = 'lookupIconOn';"
+	              onblur="this.className = 'lookupIcon';"
+	              class="lookupIcon" alt="" src="/s.gif" style="cursor: pointer;"
+	              name="productPopup"
+	              rowIndex = "{!t.rowNo}" />
+            </span>
+            <apex:inputHidden value="{!t.sobj.AccountMasterRef__c}" id="hidProductId" />
+            <apex:inputHidden value="{!t.productNm}" id="hidProductNm" />
+		</apex:column>
+		<apex:column headerValue="単価" style="text-align: right; ">
+		<apex:outputText value="{!t.sobj.AccountMasterRef__r.Field5__c}" id="price"/>
+		</apex:column>
+        <!-- 消費税 -->
+        <apex:column headerValue="{!$ObjectType.PlanDetail__c.Fields.TaxRate__c.label}">
+            <apex:inputField value="{!t.sobj.TaxRate__c}" id="taxRateType" style="width:60px;"/>
+        </apex:column>
+        <!-- サービス料 -->
+        <apex:column headerValue="{!$ObjectType.PlanDetail__c.Fields.ServiceRate__c.label}">
+            <apex:inputField value="{!t.sobj.ServiceRate__c}" id="serviceRate" style="width:60px;"/>
+        </apex:column>
+        <!-- 合計金額(税込) -->
+        <apex:column headerValue="合計金額" footerClass="totalRowNumCell"
+            style="text-align: right; background-color: #FFEBCD; width:100px;" >
+            <apex:outputText value="{0,number,#,###}" id="amoutPriceIncTax" rendered="{!t.isValidata}">
+                <apex:param value="{!t.amoutIncTax}" />
+            </apex:outputText>
+            <!--
+            <apex:facet name="footer">
+            <apex:outputText value="{0,number,#,###}">
+            <apex:param value="{!productAmount}" />
+            </apex:outputText></apex:facet>
+            -->
+        </apex:column>
+		<!-- 金額　-->
+        <apex:column headerValue="{!$ObjectType.PlanDetail__c.Fields.Price__c.label}"
+            style="text-align: right; width:100px;" footerClass="totalRowNumCell">
+
+            <apex:outputPanel styleClass="requiredInput" layout="block">
+            <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+            <apex:inputField value="{!t.sobj.Price__c}" id="freePrice" style="width:100px; text-align: right;"/>
+            </apex:outputPanel>
+            <!--
+            <apex:facet name="footer">
+            <apex:outputText value="{0,number,#,###}">
+            <apex:param value="{!productInputAmout}" />
+            </apex:outputText></apex:facet>
+            -->
+        </apex:column>
+        <!-- 差額 -->
+        <apex:column headerValue="差額" title="差額 = (合計金額-金額)" footerClass="totalRowNumCell"
+            style="text-align: right; background-color: #FFEBCD; width:100px;" >
+            <apex:outputText value="{0,number,#,###}" id="diffPrice" rendered="{!t.isValidata}">
+                <apex:param value="{!t.diffPrice}" />
+            </apex:outputText>
+            <!--
+            <apex:facet name="footer">
+            <apex:outputText value="{0,number,#,###}">
+            <apex:param value="{!productAmount - productInputAmout}" />
+            </apex:outputText></apex:facet>
+             -->
+         </apex:column>
+	</apex:pageBlockTable>
+
+</apex:pageblock>
+</apex:form>
+<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.blockUI.js')}"/>
+<script>
+$=jQuery.noConflict();
+function blockUi(formobj) {
+    $("form[id='" + formobj.id +"']").block({
+         message: '<h1><img src="{!URLFOR($Resource.queryfiles, 'css/blockui/busy.gif')}" /> Processing...</h1>'
+    });
+    return true;
+}
+// Lock解除
+function unblockUi () {
+    $("form[id$=':batchProcess']").unblock();
+}
+</script>
+</apex:page>

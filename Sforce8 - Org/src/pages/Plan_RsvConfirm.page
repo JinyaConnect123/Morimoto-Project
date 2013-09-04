@@ -1,0 +1,167 @@
+<apex:page standardStylesheets="true" showHeader="false" sidebar="false" Controller="PlanCon" id="Plan_RsvConfirm">
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> <apex:outputText value="ホームページ"/></apex:outputlink> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> <apex:outputText value="予約変更・取消"/></apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> <apex:outputText value="予約トップ"/></apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+    
+    <!-- TABLE FOR PLAN RESERVATION FORM -->
+    <apex:form id="theForm">
+        <TABLE CLASS = "comPlanTbl" CELLPADDING = "5" CELLSPACING = "5">
+            <TR>
+                <TH CLASS ="comPlanTbl" COLSPAN = "2">
+                    <apex:outputText value="予約確認"/>
+                </TH>
+            </TR>
+            <TR>
+                <TH COLSPAN ="2" CLASS = "pf_planName">
+                    <apex:outputText value="{!g_strPlanName}"/>
+                </TH>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol"><apex:outputText value="宿泊日"/></TD>
+                <TD CLASS = "pf_rightCol"><apex:outputText value="{!EntryDate}"/></TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="チェックイン時刻"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/></TD>
+                <TD CLASS = "pf_rightCol"> 
+                    <apex:outputText value="{!selectedHour}時"/>&nbsp;
+                    <apex:outputText value="{!selectedMin}分"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="泊数"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!selectedNight}泊"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="部屋数"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="1室"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="部屋タイプ"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!g_strRoomType}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="宿泊人数"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/>
+                </TD>
+                <TD CLASS = "pf_rightCol"></TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="代表者氏名"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/></TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!CustomerName}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="読みかな"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!CustomerNameK}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="電話番号"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!TelNo}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="郵便番号"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/></TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!PostalCode1}"/>-<apex:outputText value="{!PostalCode2}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="住所"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/></TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!SelAreaVal}"/> 
+                    <apex:outputText value="{!City}"/>
+                    <apex:outputText value="{!Address}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="Eメールアドレス"/>
+                    <apex:outputText styleClass="imptMessage" value=" ＊"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!Email1}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="携帯電話番号"/> <BR/> 
+                    <apex:outputText value="[Mobile Phone Number]"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!MobileNo}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pf_leftCol">
+                    <apex:outputText value="ご要望・ご質問"/>
+                </TD>
+                <TD CLASS = "pf_rightCol">
+                    <apex:outputText value="{!RequestInfo}"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD CLASS ="pf_ImptMsg" COLSPAN = "2">
+                    <apex:outputText value="この内容でよろしければ「予約確定」ボタンを押して下さい。"/>
+                    <BR/>
+                    <apex:outputText value="※　ボタンは２回以上押さないでください。重復予約ことがあります。"/>
+                </TD>
+            </TR>
+            <TR>
+                <TD STYLE = "TEXT-ALIGN: CENTER" COLSPAN = "2">
+                    <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 15px 6px 15px; text-decoration:none" value="前画面へ戻る" action="{!ViewPlanFormPage}" />&nbsp;&nbsp;&nbsp;
+                    <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 30px 6px 30px; text-decoration:none" value="予約確定" action="{!ViewPlanRsvCompPage}">
+                        <apex:param name="pageType" value="予約" assignTo="{!g_strPageType}"/>
+                    </apex:commandLink>
+                    <BR/><BR/>
+                </TD>
+            </TR>
+        </TABLE>
+    </apex:form>
+<BR/><BR/><BR/>
+</apex:page>

@@ -1,0 +1,280 @@
+<apex:page standardcontroller="Lead__c" extensions="LeadPDF" showHeader="false" 
+    sidebar="false" renderAs="pdf" readonly="true">
+<!--  Entry Css style sheet file to resource file -->
+<html>
+ <head>
+  <style>
+   @page {
+    size: 8.27in 11.69in;   /* A4 portlate size */
+    margin: 10px; 
+   }
+   body {
+   font-family: Arial Unicode MS;
+   }
+   .odd {
+    border-bottom: 1px solid #000;
+    padding: 1px 1px 2px 2px;
+    font-size: 100%;
+   }
+   .even {
+    border-bottom: 1px solid #000;
+    background-color: #CCCCCC;
+    padding: 1px 1px 2px 2px;
+    font-size: 100%;
+   }
+  </style>
+ </head>   
+ <body>     
+<div align="center"><span style="font-size:18pt;">見 　 積　  書</span></div>
+<div align="right"><span style="font-size:8pt;">No.&nbsp;{!lead.No__c}</span></div>
+<hr size="2" color="#000000"/>
+
+
+<table style="width: 100%" cellpadding="0px" cellspacing="0px">
+<tr style="vertical-align: top;">
+<td>
+
+<br/>
+<span style="font-size:16pt;">{!Customer}　様</span>
+<br/>
+<br/>
+<span style="font-size:14pt;">御請求金額</span><br/>
+ <table border="1" cellspacing="0" bordercolor="black" width="150px">
+  <tr>
+   <td>
+    <div style="font-size:12pt;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!sumInfo.amoutPriceIncTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+ </table>
+<span style="font-size:10pt;">毎度格別の御引立に預かり厚く御礼申し上げます</span><br/>
+<span style="font-size:10pt;">下記の通り御請求申し上げます。</span>
+
+</td>
+
+<td style="text-align: right;">
+<!--
+<div style="float:right; width:255px;height:155px">
+<apex:outputField value="{!ReportLogo.ReportLogo__c}" id="logoImg" />
+</div> -->
+    <div style="float:right; width:255px;height:75px">
+    <apex:outputField value="{!ReportLogo.ReportLogo__c}" id="logoImg" />
+    </div>
+    <div style="float:right; width:255px; text-align: left;font-size: 10pt;">
+    <table cellpadding="0" cellspacing="0">
+       <tr style="height: 2px;">
+       <td style="width: 30px;"></td>
+       <td style="width: 100px;"></td>
+       <td style="width: 20px;"></td>
+       <td style="width: 100px;"></td>
+       </tr>
+       <!-- 会社名 -->
+       <tr height="10px;"><td colspan="4"><span style="font-size: 11pt;">{!$Organization.Name}</span></td></tr>
+       <tr height="10px;"><td colspan="4">〒{!$Organization.PostalCode}</td></tr>
+       <tr height="10px;"><td colspan="4">{!$Organization.State}{!$Organization.City}{!$Organization.Street}</td></tr>
+       <tr height="10px;"><td>Tel</td><td colspan="3">{!$Organization.Phone}</td></tr>
+       <tr height="10px;"><td>Fax</td><td colspan="3">{!$Organization.Fax}</td></tr>
+    </table>
+    </div>
+</td>
+</tr>
+
+<tr> <td></td>
+<td>
+<div align="right" style="font-size:9pt;">
+<apex:outputText value="{0,date,yyyy年MM月dd日}">
+日付&nbsp;&nbsp;<apex:param value="{!lead.ReservedDate__c}" />
+</apex:outputText>
+</div>
+<div align="right" style="font-size:8pt;">単位:円</div>
+</td>
+
+</tr>
+</table>
+
+<!-- 
+<img src="{!$Resource.JinyaDemo_2}" alt="JinyaDemo_2" align="right"/>
+<br/>
+<span style="font-size:16pt;">{!Customer}　様</span>
+<br/>
+<br/>
+<span style="font-size:14pt;">御請求金額</span><br/>
+ <table border="1" cellspacing="0" bordercolor="black" width="20%">
+  <tr>
+   <td>
+    <div style="font-size:12pt;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!sumInfo.amoutPriceIncTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+ </table>
+<span style="font-size:10pt;">毎度格別の御引立に預かり厚く御礼申し上げます</span><br/>
+<span style="font-size:10pt;">下記の通り御請求申し上げます。</span>
+<div align="right" style="font-size:9pt;">　
+<apex:outputText value="{0,date,yyyy年MM月dd日}">
+日付&nbsp;&nbsp;<apex:param value="{!lead.ReservedDate__c}" />
+</apex:outputText>
+</div>
+<div align="right" style="font-size:8pt;">単位:円</div>
+ -->
+ 
+<apex:pageBlock >
+<apex:dataTable rowClasses="odd,even" value="{!DetaiLst}" var="t" border="1" cellpadding="1" width="100%">
+   <apex:column width="5%" style="font-size:80%;">
+    <apex:facet name="header" >
+     <div align="center" style="font-size:70%;background-color:#CCCCCC;">
+      No.
+     </div>
+    </apex:facet>
+    <div align="center">
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!t.rowNo}" />
+     </apex:outputtext>
+    </div>
+   </apex:column>
+   
+   <apex:column width="50%" style="font-size:80%;">
+    <apex:facet name="header" >
+     <div align="center" style="font-size:70%;background-color:#CCCCCC;">
+      摘要／項目
+     </div>
+    </apex:facet>
+    {!t.sobj.X2_1__c}
+   </apex:column>
+   
+   <apex:column width="15%" style="font-size:80%;">
+    <apex:facet name="header">
+     <div align="center" style="font-size:70%;background-color:#CCCCCC;">
+      単価
+     </div>
+    </apex:facet>
+    <div align="right">
+     <apex:outputtext value="{0,number,}">
+      <apex:outputLabel value="¥ " rendered="{!t.sobj.id != null}" />
+      <apex:outputLabel value="　" rendered="{!t.sobj.id == null}" />
+      <apex:param value="{!t.sobj.UnitPrice__c}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </apex:column>
+   
+   <apex:column width="10%" style="font-size:80%;">
+    <apex:facet name="header">
+     <div align="center" style="font-size:70%;background-color:#CCCCCC;">
+      数量
+     </div>
+    </apex:facet>
+    <div align="center">
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!t.sobj.Amount__c}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </apex:column>
+   
+   <apex:column width="20%" style="font-size:80%;">
+    <apex:facet name="header">
+     <div align="center" style="font-size:70%;background-color:#CCCCCC;">
+      金額
+     </div>
+    </apex:facet>
+    <div align="right">
+     <apex:outputtext value="{0,number,}" >
+      <apex:outputLabel value="¥ " rendered="{!t.sobj.id != null}" />
+      <apex:outputLabel value="　" rendered="{!t.sobj.id == null}" />
+      <apex:param value="{!t.sobj.UnitPrice__c * t.sobj.Amount__c}" />
+
+     </apex:outputtext>
+    </div>
+   </apex:column>
+ </apex:dataTable>
+</apex:pageBlock>
+
+ <table>
+ <tr><td><img alt="" src="{!URLFOR($Resource.reportFiles, 'img/blank')}" style="width: 30px; height: 1px;"/></td></tr>
+ </table>
+
+ <table border="1" cellspacing="0" bordercolor="black" width="40%" align="right">
+
+  <tr>
+    <td width="50%">
+    <div style="font-size:70%; margin-right: 2px;" align="right">
+     ご利用金額(税込)
+    </div>
+   </td>
+   <td width="50%">
+    <div style="font-size:90%; margin-right: 2px;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!sumInfo.amoutPriceIncTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+
+  <tr>
+    <td width="50%">
+    <div style="font-size:70%; margin-right: 2px;" align="right">
+     内消費税
+    </div>
+   </td>
+   <td width="50%">
+    <div style="font-size:90%; margin-right: 2px;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}">
+      <apex:param value="{!sumInfo.amoutTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+   <!--
+  <tr style="display: {!if( sumInfo.amoutServiceIncTax > 0, '', 'none')}">
+    <td width="50%">
+    <div style="font-size:70%; margin-right: 2px;" align="right">
+     内サービス料(税込)
+    </div>
+   </td>
+   <td width="50%">
+    <div style="font-size:90%; margin-right: 2px;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}" >
+      <apex:param value="{!sumInfo.amoutServiceIncTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+
+  <tr style="display: {!if( sumInfo.amoutSpecialIncTax > 0, '', 'none')}">
+    <td width="50%">
+    <div style="font-size:70%; margin-right: 2px;" align="right">
+     内宿泊税
+    </div>
+   </td>
+   <td width="50%">
+    <div style="font-size:90%; margin-right: 2px;" align="right">
+     ¥&nbsp;
+     <apex:outputtext value="{0,number,}" >
+      <apex:param value="{!sumInfo.amoutSpecialIncTax}"></apex:param>
+     </apex:outputtext>
+    </div>
+   </td>
+  </tr>
+     -->
+
+ </table>
+ 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>
+</apex:page>

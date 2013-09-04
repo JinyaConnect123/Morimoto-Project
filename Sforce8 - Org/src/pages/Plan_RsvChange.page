@@ -1,0 +1,191 @@
+<apex:page controller="PlanCon" id="Plan_RsvChange" standardStylesheets="true" showHeader="false" sidebar="false">
+    <apex:form id="theForm">
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> <apex:outputText value="ホームページ"/></apex:outputlink> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> <apex:outputText value="予約変更・取消"/></apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> <apex:outputText value="予約トップ"/></apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+    
+    <!-- TABLE FOR PLAN RESERVATION FORM -->
+        <TABLE CLASS = "comPlanTbl" CELLPADDING = "5" CELLSPACING = "5">
+            <TR>
+                <TH CLASS ="comPlanTbl" COLSPAN = "2"><apex:outputText value="予約変更フォーム"/></TH>
+            </TR>
+            <TR>
+                <TH COLSPAN ="2" CLASS = "pcom_msgHeader">
+                    <apex:outputText value="以下の内容にてご予約の変更を承ります。"/>
+                </TH>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgBody">
+                    <TABLE CLASS = "pcan_ChgForm" ALIGN = "CENTER" CELLPADDING = "5" CELLSPACING = "5">
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="予約番号"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value=" A00611992"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="宿泊代表者氏名"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="クライエント様"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="Eメールアドレス"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="sample@email.com"/></TD>
+                        </TR>
+                        <TR>
+                            <TD COLSPAN = "2"><HR/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="プラン名"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="第36回プロが選ぶ日本のホテル・旅館100選 ノミネート施設 ロールスロイスがお迎えラグジュアリー総料理長おすすめ特選会席プラン
+                            "/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="部屋タイプ"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="檜室内風呂付き客室"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="宿泊日"/></TD>
+                            <TD CLASS = "pcan_ChgForm">
+                                <apex:selectList id="selectYear" styleClass="selectOption" value="{!selectedHour}" size="1">
+                                    <apex:selectOption itemValue="--" itemLabel="--"/>
+                                    <apex:selectOption itemValue="2011" itemLabel="2011"/>
+                                    <apex:selectOption itemValue="2012" itemLabel="2012"/>
+                                    <apex:selectOption itemValue="2013" itemLabel="2013"/>
+                                </apex:selectList> 
+                                <apex:outputText value=" 年"/>
+                                    &nbsp;
+                                <apex:selectList id="selectMonth" styleClass="selectOption" value="{!selectedMin}" size="1">
+                                    <apex:selectOption itemValue="--" itemLabel="--"/>
+                                    <apex:selectOption itemValue="01" itemLabel="01"/>
+                                    <apex:selectOption itemValue="02" itemLabel="02"/>
+                                    <apex:selectOption itemValue="03" itemLabel="03"/>
+                                    <apex:selectOption itemValue="04" itemLabel="4"/>
+                                    <apex:selectOption itemValue="05" itemLabel="05"/>
+                                    <apex:selectOption itemValue="06" itemLabel="06"/>
+                                    <apex:selectOption itemValue="07" itemLabel="07"/>
+                                    <apex:selectOption itemValue="08" itemLabel="08"/>
+                                    <apex:selectOption itemValue="09" itemLabel="09"/>
+                                    <apex:selectOption itemValue="10" itemLabel="10"/>
+                                    <apex:selectOption itemValue="11" itemLabel="11"/>
+                                    <apex:selectOption itemValue="12" itemLabel="12"/>
+                                </apex:selectList>
+                                <apex:outputText value=" 月"/> 
+                                &nbsp;
+                                <apex:selectList id="selectDay" styleClass="selectOption" value="{!selectedMin}" size="1">
+                                    <apex:selectOption itemValue="--" itemLabel="--"/>
+                                    <apex:selectOption itemValue="01" itemLabel="01"/>
+                                    <apex:selectOption itemValue="02" itemLabel="02"/>
+                                    <apex:selectOption itemValue="03" itemLabel="03"/>
+                                    <apex:selectOption itemValue="04" itemLabel="4"/>
+                                    <apex:selectOption itemValue="05" itemLabel="05"/>
+                                    <apex:selectOption itemValue="06" itemLabel="06"/>
+                                    <apex:selectOption itemValue="07" itemLabel="07"/>
+                                    <apex:selectOption itemValue="08" itemLabel="08"/>
+                                    <apex:selectOption itemValue="09" itemLabel="09"/>
+                                    <apex:selectOption itemValue="10" itemLabel="10"/>
+                                    <apex:selectOption itemValue="11" itemLabel="11"/>
+                                    <apex:selectOption itemValue="12" itemLabel="12"/>
+                                    <apex:selectOption itemValue="13" itemLabel="13"/>
+                                    <apex:selectOption itemValue="14" itemLabel="14"/>
+                                    <apex:selectOption itemValue="15" itemLabel="15"/>
+                                    <apex:selectOption itemValue="16" itemLabel="16"/>
+                                    <apex:selectOption itemValue="17" itemLabel="17"/>
+                                    <apex:selectOption itemValue="18" itemLabel="18"/>
+                                    <apex:selectOption itemValue="19" itemLabel="19"/>
+                                    <apex:selectOption itemValue="20" itemLabel="20"/>
+                                    <apex:selectOption itemValue="22" itemLabel="22"/>
+                                    <apex:selectOption itemValue="22" itemLabel="22"/>
+                                    <apex:selectOption itemValue="23" itemLabel="23"/>
+                                    <apex:selectOption itemValue="24" itemLabel="24"/>
+                                    <apex:selectOption itemValue="25" itemLabel="25"/>
+                                    <apex:selectOption itemValue="26" itemLabel="26"/>
+                                    <apex:selectOption itemValue="27" itemLabel="27"/>
+                                    <apex:selectOption itemValue="28" itemLabel="28"/>
+                                    <apex:selectOption itemValue="29" itemLabel="29"/>
+                                    <apex:selectOption itemValue="30" itemLabel="30"/>
+                                </apex:selectList>
+                                <apex:outputText value=" 日"/> 
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="チェックイン時刻"/></TD>
+                            <TD CLASS = "pcan_ChgForm">
+                                 <apex:selectList id="selectHour" styleClass="selectOption" value="{!selectedHour}" size="1">
+                                    <apex:selectOption itemValue="--" itemLabel="--"/>
+                                    <apex:selectOption itemValue="15" itemLabel="15"/>
+                                    <apex:selectOption itemValue="16" itemLabel="16"/>
+                                    <apex:selectOption itemValue="17" itemLabel="17"/>
+                                    <apex:selectOption itemValue="18" itemLabel="18"/>
+                                    <apex:selectOption itemValue="19" itemLabel="19"/>
+                                    <apex:selectOption itemValue="20" itemLabel="20"/>
+                                </apex:selectList> 
+                                <apex:outputText value=" 時"/>
+                                    &nbsp;
+                                <apex:selectList id="selectMin" styleClass="selectOption" value="{!selectedMin}" size="1">
+                                    <apex:selectOption itemValue="--" itemLabel="--"/>
+                                    <apex:selectOption itemValue="00" itemLabel="00"/>
+                                    <apex:selectOption itemValue="15" itemLabel="15"/>
+                                    <apex:selectOption itemValue="30" itemLabel="30"/>
+                                    <apex:selectOption itemValue="45" itemLabel="45"/>
+                                </apex:selectList>
+                                <apex:outputText value=" 分"/> 
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="泊数"/></TD>
+                            <TD CLASS = "pcan_ChgForm">
+                                <apex:selectList id="selectNights" styleClass="selectOption" value="{!selectedNight}" size="1">
+                                    <apex:selectOption itemValue="1" itemLabel="1"/>
+                                    <apex:selectOption itemValue="2" itemLabel="2"/>
+                                    <apex:selectOption itemValue="3" itemLabel="3"/>
+                                </apex:selectList> 
+                                <apex:outputText value=" 泊"/>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="部屋数"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="1 部屋"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="人数(1部屋目)"/></TD>
+                            <TD CLASS = "pcan_ChgForm">
+                                大人男性／&nbsp;<apex:inputText value="{!MaleCount}" styleClass="inputTxt_Persons"/><BR/><BR/>
+                                大人女性／&nbsp;<apex:inputText value="{!FemaleCount}" styleClass="inputTxt_Persons"/><BR/><BR/>
+                                小児（食事布団なし／&nbsp;<apex:inputText value="{!ChildCount}" styleClass="inputTxt_Persons"/>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD COLSPAN = "2" ALIGN = "CENTER">
+                                <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 15px 6px 15px; text-decoration:none" value="前画面へ戻る" action="{!SearchReservation}" />
+                                &nbsp;&nbsp;&nbsp;
+                                <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 30px 6px 30px; text-decoration:none" value="変更確定" action="{!ViewPlanRsvCompPage}">
+                                    <apex:param name="pageType" value="変更" assignTo="{!g_strPageType}"/>
+                                </apex:commandLink>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgFooter">
+                    <apex:outputText styleClass="imptMessage_Note" value="※　この内容でよろしければ「変更確定」ボタンを押してください。"/>
+                </TD>
+            </TR>
+        </TABLE>
+    <!-- END OF TABLE FOR PLAN RESERVATION FORM -->
+    <BR/><BR/><BR/>
+    </apex:form>
+</apex:page>

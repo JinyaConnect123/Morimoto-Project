@@ -1,0 +1,52 @@
+<apex:page controller="BulkProcessBatch" tabstyle="Lead__c">
+
+	<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.min.js')}"/>
+	<apex:includeScript value="{!URLFOR($Resource.queryfiles, 'js/jquery.blockUI.js')}"/>
+    <apex:form id="batchProcess">
+		<apex:pageBlock title="バッチ一括処理 ">
+        <apex:pageMessage summary="{!message}" severity="info"  strength="1"
+            title="バッチ処理結果：" escape="false" rendered="{!isShowMessage}"/>
+            <apex:outputLabel value="処理日" styleClass="labelCol"/>
+			<apex:outputPanel styleClass="requiredInput" layout="block">
+			<apex:outputPanel styleClass="requiredBlock" layout="block"/>
+			<apex:inputText value="{!checkInDate}" maxlength="10" size="14" style="height: 1em; font-size: 100%;"/>(yyyy/mm/dd)
+			&nbsp;&nbsp;&nbsp;
+            <apex:commandButton value="処理" action="{!autoCheckInProcess}" onClick="blockUi(this.form)"/>
+            </apex:outputPanel>
+		</apex:pageBlock>
+    </apex:form>
+    <!-- 
+    <apex:form id="amountProcess">
+        <apex:pageBlock title="売上一括処理 ">
+			<apex:pageMessage severity="error" strength="1" summary="{!calDayAmoutErrMsg}" rendered="{!isShowCalDayAmoutMsg && calDayAmoutErrMsg != null}"/>
+			<apex:pageMessage severity="info" strength="1" summary="{!calDayAmoutInfMsg}" rendered="{!isShowCalDayAmoutMsg && calDayAmoutInfMsg != null}"/>
+            <apex:outputPanel styleClass="requiredInput" layout="block">
+            <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+            <apex:inputText value="{!amoutDate}" maxlength="10" size="14" style="height: 1em; font-size: 100%;"/>(yyyy/mm/dd)
+            &nbsp;&nbsp;&nbsp;
+            <apex:commandButton value="一括処理" action="{!autoCalDayAmount}" onClick="blockUi(this.form)"/>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+     -->
+    <apex:form >
+    <apex:pageBlock title="Update sales account "> 
+        <apex:pageMessages />
+        <apex:commandButton value="Update" action="{!UpdateforSalesforcast}" id="theButton"/>
+    </apex:pageBlock>
+	</apex:form>
+<script>
+$=jQuery.noConflict();
+function blockUi(formobj) {
+    $("form[id='" + formobj.id +"']").block({
+         message: '<h1><img src="{!URLFOR($Resource.queryfiles, 'css/blockui/busy.gif')}" /> Processing...</h1>'
+    });
+    return true;
+}
+// Lock解除
+function unblockUi () {
+    $("form[id$=':batchProcess']").unblock();
+}
+</script>
+
+</apex:page>

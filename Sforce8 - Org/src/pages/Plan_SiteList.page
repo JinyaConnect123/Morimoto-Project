@@ -1,0 +1,143 @@
+<apex:page controller="PlanCon" action="{!LoadPlanList}" id="Plan_SiteList" standardStylesheets="true" showHeader="false" sidebar="false">
+    <apex:form > 
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->    
+    
+    <!-- JAVASCRIPT FOR THE IMAGE SLIDESHOW -->
+     <script>
+            function slideSwitch() {
+            var $active = $('#pl_animation IMG.active');
+            if ( $active.length == 0 ) $active = $('#pl_animation IMG:last');
+            var $next =  $active.next().length ? $active.next()
+                : $('#pl_animation IMG:first');
+            $active.addClass('last-active');
+            $next.css({opacity: 0.0})
+                .addClass('active')
+                .animate({opacity: 1.0}, 3000, function() {
+                    $active.removeClass('active last-active');
+                });
+            }
+            $(function() {
+                setInterval( "slideSwitch()", 6000 );
+            });
+        </SCRIPT>
+    <!-- END OF JAVASCRIPT FOR THE IMAGE SLIDESHOW -->
+    
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> ホームページ</apex:outputlink>    
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> 予約変更・取消</apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> 予約トップ</apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+    
+    <!-- TABLE FOR THE PLAN LIST -->
+        <TABLE CLASS = "comPlanTbl" CELLPADDING="5" CELLSPACING="5">
+            <TR>
+                <TH CLASS = "pl_title" COLSPAN="2">
+                    <apex:pageBlock id="PlanNames" mode="detail">
+                        <apex:pageBlockSection title="プラン一覧" collapsible="true" columns="2">
+                            <apex:repeat value="{!PlanData}" var="PlanData">
+                                <apex:repeat value="{!PlanData}" var="plan_c">
+                                    <apex:pageBlockSectionItem >
+                                        <P><A HREF="#{!plan_c.Name}">{!plan_c.Name}</A></P>
+                                    </apex:pageBlockSectionItem>
+                                    <BR />
+                                </apex:repeat>
+                            </apex:repeat>                          
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </TH>
+            </TR>
+        </TABLE>
+    <!-- END OF TABLE FOR THE PLAN LIST -->
+    
+    
+    <BR/><BR/>
+    
+    <!-- TABLE FOR THE PLAN DETAILS W/ WEEKLY CALENDAR -->
+    <apex:repeat value="{!PlanData}" var="PlanData">
+        <apex:repeat value="{!PlanData}" var="plan_c">
+            <TABLE CLASS = "planInfo" CELLPADDING="5" CELLSPACING="5">
+                <TR>
+                    <TH CLASS = "comPlanTbl" COLSPAN="2">
+                        <A STYLE = "COLOR: WHITE" NAME ="{!plan_c.Name}">{!plan_c.Name}</A>
+                    </TH>
+                </TR>
+                
+                <TR>
+                    <TD CLASS = "pl_planIntro" ALIGN = "LEFT"> 
+                       <DIV id="pl_animation" CLASS = "pl_slide" >      
+                          <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="150" WIDTH="205" value="{!plan_c.Image1__c}" />                        
+                          <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="150" WIDTH="205" value="{!plan_c.Image2__c}"/>
+                          <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="150" WIDTH="205" value="{!plan_c.Image3__c}"/>
+                          <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="150" WIDTH="205" value="{!plan_c.Image4__c}"/>
+                        </DIV>
+                        <apex:outputText escape="false" value="{!plan_c.Planintro__c}"/>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD CLASS = "pl_planIntro" ALIGN = "LEFT"> 
+                        <apex:outputText escape="false" value="{!Message01}"/>
+                        <apex:outputText escape="false" value="{!Message02}"/>
+                        <apex:outputText escape="false" value="{!Message03}"/>
+                        <apex:selectList id="chooseNumPersons" value="{!NumPersons}" size="1">
+                            <apex:selectOption itemValue="1" itemLabel="1"/>
+                            <apex:selectOption itemValue="2" itemLabel="2"/>
+                            <apex:selectOption itemValue="3" itemLabel="3"/>
+                            <apex:selectOption itemValue="4" itemLabel="4"/>
+                            <apex:selectOption itemValue="5" itemLabel="5"/>
+                            <apex:selectOption itemValue="6" itemLabel="6"/>
+                            <apex:selectOption itemValue="7" itemLabel="7"/>
+                            <apex:selectOption itemValue="8" itemLabel="8"/>
+                            <apex:selectOption itemValue="9" itemLabel="9"/>
+                            <apex:selectOption itemValue="10" itemLabel="10"/>
+                        </apex:selectList> 
+                        <apex:outputText escape="false" value="{!Message04}"/>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD ALIGN = "CENTER">
+                        <!-- TABLE FOR THE WEEK CALENDAR -->    
+                            <TABLE CLASS = "weeklyCal">
+                                    <!-- TABLE HEADER FOR WEEK CALENDAR -->
+                                    <TR>
+                                        <TH WIDTH = "19%" CLASS = "calPlanRoom">部屋タイプ</TH>
+                                        <TH CLASS = "calPlanRoom">プラン</TH>
+                                       <apex:repeat value="{!WeekDates}" var="wkDate" id="wkDayCal">
+                                            <TH WIDTH = "10%" CLASS = "calPlanDate">
+                                                <apex:outputtext >
+                                                 {!wkDate.date1} <BR/> {!wkDate.day1}
+                                                </apex:outputtext>
+                                            </TH>
+                                        </apex:repeat>
+                                    </TR>
+                                    <!-- END OF TABLE HEADER FOR WEEK CALENDAR -->
+                                    
+                                    <!-- ROOM TYPE LOOP -->
+                                    <c:PublicPlan componentValue="{!plan_c.Name}"/>
+                                   
+                                   
+                                   
+                                    <!-- END OF ROOM TYPE LOOP -->
+                            </TABLE>
+                        <!-- END OF TABLE FOR THE WEEK CALENDAR -->
+                    </TD>
+                </TR>
+            </TABLE><BR/><BR/>
+        </apex:repeat>
+    </apex:repeat>
+    <!-- TABLE FOR THE PLAN DETAILS W/ WEEKLY CALENDAR -->
+    
+    <BR/><BR/><BR/><BR/>
+    </apex:form>
+</apex:page>

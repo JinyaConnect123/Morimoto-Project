@@ -1,0 +1,57 @@
+<apex:component controller="PlanCon">
+    <apex:attribute name="componentValue" description="Attribute on the component." type="String" required="required" assignTo="{!g_strPlanName}"/>
+    
+    <BR/><BR/>
+    
+    <!-- TABLE FOR THE PLAN DETAILS W/ WEEKLY CALENDAR -->
+        <!-- TABLE FOR THE WEEK CALENDAR -->    
+          <!--  <apex:repeat value="{!wrap}" var="RoomType">-->
+                <apex:repeat value="{!wrap}" var="rt">
+                    <TR>
+                        <TD CLASS = "calPlanRoom">
+                            <apex:commandLink styleClass="comLink_plPlanRoom" value="{!rt.roomtype}" action="{!ViewPlanDetailsPage}">
+                                <apex:param name="roomtypeID" value="{!rt.roomtypeid}" assignTo="{!g_strRoomtypeID}"/>
+                                <apex:param name="planID" value="{!rt.planid}" assignTo="{!g_strPlanID}"/>
+                            </apex:commandLink>
+                        </TD>
+                        <TD CLASS = "calPlanRoom">
+                            <apex:commandLink styleClass="comLink_plPlanRoom" value="{!rt.Name}" action="{!ViewPlanDetailsPage}">
+                                <apex:param name="roomtypeID" value="{!rt.roomtypeid}" assignTo="{!g_strRoomtypeID}"/>
+                                <apex:param name="planID" value="{!rt.planid}" assignTo="{!g_strPlanID}"/>
+                            </apex:commandLink>
+                        </TD>
+                       <!-- <apex:repeat value="{!StatAndAmt}" var="stat_amt">
+                     
+                      
+                            <TD CLASS = "calPlanDate">
+                               <apex:commandLink styleClass="outLink_PlanDate" action="{!ViewPlanDetailsPage}">
+                             {!stat_amt.Status}<BR/><BR/>{!stat_amt.Amount}
+                                    <apex:param name="roomtypeID" value="{!rt.roomtypeid}" assignTo="{!g_strRoomtypeID}"/>
+                                <apex:param name="planID" value="{!rt.planidId}" assignTo="{!g_strPlanID}"/>
+                              
+                            </apex:commandLink>
+                            
+                            -->
+                           <!-- writtern by Advanz --->
+                        <apex:repeat value="{!wrap1}" var="stat_amt">
+                          
+                      
+                            <TD CLASS = "calPlanDate">
+                            <apex:commandLink styleClass="outLink_PlanDate" action="{!ViewPlanFormPage}"> 
+                                                       <!-- writtern by Advanz --->
+                                    {!stat_amt.Status}<BR/><BR/>{!stat_amt.Amount}
+                                    <apex:param name="roomtypeID" value="{!rt.roomtypeid}" assignTo="{!g_strRoomtypeID}"/>
+                                <apex:param name="planID" value="{!rt.planId}" assignTo="{!g_strPlanID}"/>
+                               <!-- writtern by Advanz --->
+                                    <apex:param name="weekdate1" value="{!stat_amt.weekdate}" />   <!-- writtern by Advanz --->
+                            </apex:commandLink>
+                            </TD>
+
+                       
+                     </apex:repeat>
+                    </TR></apex:repeat>
+                    <!--</apex:repeat>-->
+    <!-- TABLE FOR THE PLAN DETAILS W/ WEEKLY CALENDAR -->
+      
+   
+ </apex:component>

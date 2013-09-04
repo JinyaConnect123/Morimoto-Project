@@ -1,0 +1,169 @@
+<apex:page controller="PlanCon" action="{!LoadPlanDetails}" id="Plan_Details" standardStylesheets="true" showHeader="false" sidebar="false">
+    <apex:form id="theForm">
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->
+    
+    <!-- JAVASCRIPT FOR THE IMAGE SLIDESHOW -->
+        <SCRIPT>
+            function slideSwitch() {
+            var $active = $('#pd_animation IMG.active');
+            if ( $active.length == 0 ) $active = $('#pd_animation IMG:last');
+            var $next =  $active.next().length ? $active.next()
+                : $('#pd_animation IMG:first');
+            $active.addClass('last-active');
+            $next.css({opacity: 0.0})
+                .addClass('active')
+                .animate({opacity: 1.0}, 1000, function() {
+                    $active.removeClass('active last-active');
+                });
+            }
+            $(function() {
+                setInterval( "slideSwitch()", 6000 );
+            });
+        </SCRIPT>
+    <!-- END OF JAVASCRIPT FOR THE IMAGE SLIDESHOW -->
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> <apex:outputText value="ホームページ"/></apex:outputlink> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> <apex:outputText value="予約変更・取消"/></apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> <apex:outputText value="予約トップ"/></apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+     
+    <!-- TABLE FOR THE PLAN DETAILS -->
+        <TABLE CLASS = "comPlanTbl" CELLPADDING ="5" CELLSPACING ="5">
+            <TR>
+                <TH COLSPAN ="2" CLASS ="pd_title">プラン詳細</TH>
+            </TR>
+            <TR>
+                <TH COLSPAN ="2" CLASS = "pd_planName">{!Plan_c.Name}</TH>
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">チェックイン</TD> 
+
+                <TD CLASS = "pd_rightCol">  
+                    <DIV id="pd_animation" CLASS = "pd_slide" >
+                        <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="177" WIDTH="232" value="{!PDImage01}"/>
+                        <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="177" WIDTH="232" value="{!PDImage02}"/>
+                        <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="177" WIDTH="232" value="{!PDImage03}"/>
+                        <apex:image STYLE="PADDING: 2px; BORDER:2px solid #ccb" HEIGHT="177" WIDTH="232" value="{!PDImage04}"/>
+                    </DIV>
+                    {!Plan_c.Checkin__c}  
+                </TD>   
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">チェックアウト</TD>
+                <TD CLASS = "pd_rightCol">{!Plan_c.Checkout__c}</TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">お食事</TD>
+                <TD CLASS = "pd_rightCol">{!Plan_c.Meal__c}</TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">料金</TD>
+                <TD CLASS = "pd_rightCol">{!PDCharges}&nbsp;&nbsp;(<apex:outputText styleClass="red_msg" value="※"/>)</TD>
+            </TR>
+           <!--  <TR>
+                <TD CLASS = "pd_leftCol">お部屋</TD>
+                <TD CLASS = "pd_rightCol">{!Plan_c.Roomtype__r.Name}</TD>
+            </TR> -->
+           <!-- Written by Advanz -->
+            <TR>
+                <TD CLASS = "pd_leftCol">お部屋</TD>
+                <TD CLASS = "pd_rightCol">{!roomtypename}</TD>
+            </TR> <!-- Written by Advanz -->
+            <TR>
+                <TD CLASS = "pd_leftCol">お部屋の特徴</TD>
+                <TD CLASS = "pd_rightCol"><apex:outputText escape="false" value="{!Plan_c.Feature__c}"/></TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">プラン期間</TD>
+                <TD CLASS = "pd_rightCol">{!PDPlanStart}　〜　{!PDPlanEnd}</TD>
+            </TR>
+            <TR>
+                <TD CLASS = "pd_leftCol">プラン紹介</TD>
+                <TD CLASS = "pd_rightCol"><apex:outputText escape="false" value="{!Plan_c.Planintro__c}"/></TD>
+            </TR>
+        </TABLE><BR/><BR/><BR/> 
+        
+    <!-- THIS IS THE CALENDAR PART -->
+    <apex:outputPanel id="theCalendar">
+        <TABLE CLASS = "pd_calHeader">
+            <TR>
+                <TD CLASS = "prevMonth"><apex:commandLink action="{!dispPrevMonth}" rerender="theCalendar" value="前へ"/></TD>
+                <TD CLASS = "currentMonth"><apex:outputText value="{!month.yearname}年{!month.monthname}月"/></TD>
+                <TD CLASS = "nextMonth"><apex:commandLink action="{!dispNextMonth}" rerender="theCalendar" value="次へ"/></TD>
+            </TR>
+        </TABLE>
+        <BR/>
+        <TABLE ALIGN = "CENTER">
+            <TR ALIGN = "CENTER">
+                <TD>
+                    <apex:outputText style="font-size: 14px; font-weight: bold" value="1部屋"/>
+                    <apex:selectList style="font-size: 13px" id="chooseNumPersons" value="{!NumPersons}" size="1">
+                        <apex:selectOption itemValue="1" itemLabel="1"/>
+                        <apex:selectOption itemValue="2" itemLabel="2"/>
+                        <apex:selectOption itemValue="3" itemLabel="3"/>
+                        <apex:selectOption itemValue="4" itemLabel="4"/>
+                        <apex:selectOption itemValue="5" itemLabel="5"/>
+                        <apex:selectOption itemValue="6" itemLabel="6"/>
+                        <apex:selectOption itemValue="7" itemLabel="7"/>
+                        <apex:selectOption itemValue="8" itemLabel="8"/>
+                        <apex:selectOption itemValue="9" itemLabel="9"/>
+                        <apex:selectOption itemValue="10" itemLabel="10"/>
+                    </apex:selectList> 
+                    <apex:outputText style="font-size: 14px; font-weight: bold" value="名様のご利用"/>
+                </TD>
+            </TR>
+        </TABLE>
+        <TABLE CLASS = "monthlyCal">
+            <TBODY>
+                <TR>
+                    <TH CLASS = "pd_wkHeader">日</TH>
+                    <TH CLASS = "pd_wkHeader">月</TH>
+                    <TH CLASS = "pd_wkHeader">火</TH>
+                    <TH CLASS = "pd_wkHeader">水</TH>
+                    <TH CLASS = "pd_wkHeader">木</TH>
+                    <TH CLASS = "pd_wkHeader">金</TH>
+                    <TH CLASS = "pd_wkHeader">土</TH>
+                </TR>
+                <apex:repeat value="{!weeks}" var="wk" id="foreachWeek">
+                    <TR>
+                        <apex:repeat value="{!wk.days}" var="day" id="foreachday1">
+                            <TD CLASS = "calDate">{!day.dayofmonth}</TD>
+                        </apex:repeat>
+                    </TR>
+                    <TR>
+                        <apex:repeat value="{!wk.days}" var="day" id="foreachday2">
+                            <TD CLASS = "calBlock">
+                                <apex:commandLink styleClass="comLink_pdPlanRoom" action="{!ViewPlanFormPage1}">
+                          <!--  △<BR/><BR/>¥27,500 -->
+                         <!--<apex:outputPanel rendered="{!IF((Plan_c.Planclosedateandtime__c>=day.date && Plan_c.PlanStartDateandtime__c<=day.date),true,false)}">-->
+                          <apex:outputPanel rendered="{!IF(Plan_c.Planclosedateandtime__c>=day.date,true,false)}">
+                          △<BR/><BR/>¥27,500
+                          </apex:outputPanel>
+                                    <apex:param name="entryDate" value="{!day.date}" assignTo="{!g_strEntryDate}"/>
+                                <!--    <apex:param name="planName" value="{!plan_c.Name}" assignTo="{!g_strPlanName}"/>-->
+                                <!-- written by Advanz --> <apex:param name="planID" value="{!plan_c.Id}" assignTo="{!g_strPlanID}"/> <!-- written by Advanz --> 
+                                    <apex:param name="roomType" value="{!Plan_c.Roomtype__r.Name}" assignTo="{!g_strRoomType}"/>
+                                    
+                                </apex:commandLink>
+                            </TD>
+                        </apex:repeat>
+                    </TR>
+                </apex:repeat>
+            </TBODY>
+        </TABLE>
+    </apex:outputPanel>
+    <BR/><BR/><BR/>
+    </apex:form>
+</apex:page>

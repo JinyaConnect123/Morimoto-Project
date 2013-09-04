@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>宿帳</value>
+    </caseValues>
+    <fields>
+        <label><!-- 御部屋名 --></label>
+        <name>Field11__c</name>
+    </fields>
+    <fields>
+        <label><!-- 宿泊日 --></label>
+        <name>Field12__c</name>
+    </fields>
+    <fields>
+        <label><!-- 特記事項 --></label>
+        <name>Field13__c</name>
+    </fields>
+    <fields>
+        <label><!-- 顧客 --></label>
+        <name>Field15__c</name>
+        <relationshipLabel><!-- 宿帳 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ご予約 --></label>
+        <name>Field1__c</name>
+        <relationshipLabel><!-- 宿帳 --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

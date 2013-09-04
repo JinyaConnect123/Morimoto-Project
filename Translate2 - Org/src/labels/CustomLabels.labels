@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CST_0001</fullName>
+        <categories>Constant</categories>
+        <language>ja</language>
+        <protected>false</protected>
+        <shortDescription>部屋売価定義キー</shortDescription>
+        <value>TARIF</value>
+    </labels>
+</CustomLabels>

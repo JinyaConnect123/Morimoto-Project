@@ -1,0 +1,100 @@
+<apex:page controller="PlanCon" id="Plan_RsvCancel" standardStylesheets="true" showHeader="false" sidebar="false">
+    <apex:form id="theForm">
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> <apex:outputText value="ホームページ"/></apex:outputlink> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> <apex:outputText value="予約変更・取消"/></apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> <apex:outputText value="予約トップ"/></apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+    
+    <!-- TABLE FOR PLAN RESERVATION FORM -->
+        <TABLE CLASS = "comPlanTbl" CELLPADDING = "5" CELLSPACING = "5">
+            <TR>
+                <TH CLASS ="comPlanTbl" COLSPAN = "2"><apex:outputText value="予約取消"/></TH>
+            </TR>
+            <TR>
+                <TH COLSPAN ="2" CLASS = "pcom_msgHeader">
+                    <apex:outputText value="以下のご予約内容を本当に取消しますか？"/>
+                </TH>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgBody">
+                    <TABLE CLASS = "pcan_ChgForm" ALIGN = "CENTER" CELLPADDING = "5" CELLSPACING = "5">
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="予約番号"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value=" A00611992"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="宿泊代表者氏名"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="クライエント様"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="Eメールアドレス"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="sample@email.com"/></TD>
+                        </TR>
+                        <TR>
+                            <TD COLSPAN = "2"><HR/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="プラン名"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="第36回プロが選ぶ日本のホテル・旅館100選 ノミネート施設 ロールスロイスがお迎えラグジュアリー総料理長おすすめ特選会席プラン
+                            "/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="部屋タイプ"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="檜室内風呂付き客室"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="宿泊日"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="2012年01月07日"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="チェックイン時刻"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="15:30"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="泊数"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value=" 1泊"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="部屋数"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="1 部屋"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="人数(1部屋目)"/></TD>
+                            <TD CLASS = "pcan_ChgForm"><apex:outputText value="3人"/></TD>
+                        </TR>
+                        <TR>
+                            <TD COLSPAN = "2" ALIGN = "CENTER">
+                                <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 15px 6px 15px; text-decoration:none" value="前画面へ戻る" action="{!SearchReservation}" />
+                                &nbsp;&nbsp;&nbsp;
+                                <apex:commandLink styleClass="btn" style="font-size: 14px; font-weight:normal; padding: 6px 30px 6px 30px; text-decoration:none" value="取消確定" action="{!ViewPlanRsvCompPage}">
+                                    <apex:param name="pageType" value="取消" assignTo="{!g_strPageType}"/>
+                                </apex:commandLink>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgFooter">
+                    <apex:outputText styleClass="imptMessage_Cancel" value="※　取消後、ご予約の復元できませんのでご注意下さい。"/>
+                </TD>
+            </TR>
+        </TABLE>
+    <!-- END OF TABLE FOR PLAN RESERVATION FORM -->
+    <BR/><BR/><BR/>
+    </apex:form>
+</apex:page>

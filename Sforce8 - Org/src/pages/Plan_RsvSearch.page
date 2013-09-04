@@ -1,0 +1,68 @@
+<apex:page controller="PlanCon" id="Plan_RsvSearch" standardStylesheets="true" showHeader="false" sidebar="false">
+    <apex:form id="theForm">
+    <!-- STYLESHEET & OTHER RESOURCES -->
+        <apex:stylesheet value="{!$Resource.PlanSurveyCSS}"/> 
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/jquery-1.3.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.SitecalenderZip, 'Sitecalender/js/coda.js')}"/> 
+    <!-- END OF STYLESHEET & OTHER RESOURCES -->
+    
+    <!-- HEADER PART -->
+        <P ALIGN = "CENTER"><apex:image url="{!URLFOR($Resource.Jinyalogo)}" WIDTH="210" height="73"/></P>
+        <BR/><BR/>
+        <P ALIGN = "CENTER">  
+            <apex:outputlink value="http://www.jinya-inn.com/"> <apex:outputText value="ホームページ"/></apex:outputlink> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_RsvSearch"> <apex:outputText value="予約変更・取消"/></apex:outputlink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputlink value="/apex/Plan_SiteList"> <apex:outputText value="予約トップ"/></apex:outputlink>
+        </P>
+        <BR/><BR/>
+    <!-- END OF HEADER PART -->
+    
+    <!-- TABLE FOR PLAN RESERVATION FORM -->
+        <TABLE CLASS = "comPlanTbl" CELLPADDING = "5" CELLSPACING = "5">
+            <TR>
+                <TH CLASS ="comPlanTbl" COLSPAN = "2">予約変更・取消</TH>
+            </TR>
+            <TR>
+                <TH COLSPAN ="2" CLASS = "pcom_msgHeader">
+                    <apex:outputText value="ご予約の変更・取消はこちらから承ります。"/><BR/>
+                    <apex:outputText value="ご予約の予約番号、メールアドレスを入力後、「変更手続き」または「取消手続き」ボタンよりご確認ください。"/>
+                </TH>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgBody">
+                    <TABLE CLASS = "pcan_searchBox" ALIGN = "CENTER" CELLPADDING = "5" CELLSPACING = "5">
+                        <TR>
+                            <TH COLSPAN = "2" CLASS = "pcan_BoxHeader">
+                                <apex:outputText value="予約番号から検索"/>
+                            </TH>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="予約番号："/></TD>
+                            <TD CLASS = "pcan_right"><apex:inputText value="{!MobileNo}" styleClass="inputText_Search"/></TD>
+                        </TR>
+                        <TR>
+                            <TD CLASS = "pcan_left"><apex:outputText value="Eメール："/></TD>
+                            <TD CLASS = "pcan_right"><apex:inputText value="{!MobileNo}" styleClass="inputText_Search"/></TD>
+                        </TR>
+                        <TR>
+                            <TD COLSPAN = "2" ALIGN = "CENTER">
+                                <apex:commandButton style="font-size: 14px; font-weight:normal; width:120px; height:30px" value="変更手続き" action="{!ChangeReservation}" />
+                                &nbsp;&nbsp;&nbsp;
+                                <apex:commandButton style="font-size: 14px; font-weight:normal; width:120px; height:30px" value="取消手続き" action="{!CheckInputFields}" />
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD COLSPAN ="2" CLASS = "pcan_msgFooter">
+                    <apex:outputText styleClass="imptMessage_Note" value="※　予約番号をお忘れの方は直接宿ご連絡ください。お問い合わせは、こちらから【0463-77-1300】"/>
+                </TD>
+            </TR>
+        </TABLE>
+    <!-- END OF TABLE FOR PLAN RESERVATION FORM -->
+    <BR/><BR/><BR/>
+    </apex:form>
+</apex:page>
