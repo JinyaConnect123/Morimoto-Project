@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AllotmentBookingReport>
+  <TransactionType>
+    <DataFrom>RAKUJAN</DataFrom>
+    <DataClassification>NewBookReport</DataClassification>
+    <DataID>454</DataID>
+    <SystemDate>2012-08-27</SystemDate>
+    <SystemTime>13:19:48</SystemTime>
+  </TransactionType>
+  <ResultInformation>
+    <ResultCode>0</ResultCode>
+  </ResultInformation>
+  <AccommodationInformation>
+    <AccommodationName>元湯陣屋</AccommodationName>
+    <AccommodationCode>D01C2127</AccommodationCode>
+  </AccommodationInformation>
+  <SalesOfficeInformation>
+    <SalesOfficeCompanyCode>40</SalesOfficeCompanyCode>
+    <SalesOfficeCompanyName>予約プロ(達人)</SalesOfficeCompanyName>
+  </SalesOfficeInformation>
+  <BasicInformation>
+    <TravelAgencyBookingNumber>A001070009</TravelAgencyBookingNumber>
+    <TravelAgencyBookingDate>2012-08-15</TravelAgencyBookingDate>
+    <TravelAgencyBookingTime>21:26:00</TravelAgencyBookingTime>
+    <TravelAgencyReportNumber>454</TravelAgencyReportNumber>
+    <GuestOrGroupNameSingleByte>ｱﾝﾄﾞｳ ｺｳｼﾛｳ</GuestOrGroupNameSingleByte>
+    <GuestOrGroupNameDoubleByte>あんどう　こうしろう</GuestOrGroupNameDoubleByte>
+    <GuestOrGroupNameKanjiName>安藤 孝四郎</GuestOrGroupNameKanjiName>
+    <CheckInDate>2012-08-22</CheckInDate>
+    <CheckInTime>15:30:00</CheckInTime>
+    <CheckOutDate>2012-08-24</CheckOutDate>
+    <Nights>2</Nights>
+    <TotalRoomCount>1</TotalRoomCount>
+    <GrandTotalPaxCount>2</GrandTotalPaxCount>
+    <TotalPaxMaleCount>1</TotalPaxMaleCount>
+    <TotalPaxFemaleCount>1</TotalPaxFemaleCount>
+    <Status>Reserved</Status>
+    <PackagePlanName>貴賓室「松風」で過ごす　格別のひととき【夕朝食お部屋】</PackagePlanName>
+    <PackagePlanCode>424</PackagePlanCode>
+    <MealCondition>1night2meals</MealCondition>
+    <SpecificMealCondition>1泊2食</SpecificMealCondition>
+    <SpecialServiceRequest>結婚50年金婚式の記念です。</SpecialServiceRequest>
+  </BasicInformation>
+  <BasicRateInformation>
+    <RoomRateOrPersonalRate>PersonalRate</RoomRateOrPersonalRate>
+    <TaxServiceFee>Unknown</TaxServiceFee>
+    <TotalAccommodationCharge>212000</TotalAccommodationCharge>
+  </BasicRateInformation>
+  <RoomAndGuestInformation>
+    <RoomAndGuestList>
+      <RoomInformation>
+        <RoomTypeCode>R001</RoomTypeCode>
+        <RoomTypeName>貴賓室</RoomTypeName>
+        <PerRoomPaxCount>2</PerRoomPaxCount>
+        <RoomPaxMaleCount>2</RoomPaxMaleCount>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　100ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　200ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（陣屋どらやき　6個入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 10枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 20枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（和牛シチュー　510g  2名様分)</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉120分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉90分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>(客室1)</RoomSpecialRequest>
+        <RoomTypeAgent>40</RoomTypeAgent>
+      </RoomInformation>
+      <RoomRateInformation>
+        <RoomDate>2012-08-22</RoomDate>
+        <PerPaxRate>53000</PerPaxRate>
+        <TotalPerRoomRate>106000</TotalPerRoomRate>
+        <RoomRateDetailInfomation>
+          <RoomRate>3200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　100ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>6200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　200ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>960</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（陣屋どらやき　6個入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1575</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 10枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>3150</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 20枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>2450</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（和牛シチュー　510g  2名様分)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>19000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉120分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>14000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉90分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RateCategory>1</RateCategory>
+          <RoomRate>53000</RoomRate>
+          <RatePaxCount>2</RatePaxCount>
+          <RateDetailInfomation>(客室1)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+      </RoomRateInformation>
+      <RoomRateInformation>
+        <RoomDate>2012-08-23</RoomDate>
+        <PerPaxRate>53000</PerPaxRate>
+        <TotalPerRoomRate>106000</TotalPerRoomRate>
+        <RoomRateDetailInfomation>
+          <RateCategory>1</RateCategory>
+          <RoomRate>53000</RoomRate>
+          <RatePaxCount>2</RatePaxCount>
+          <RateDetailInfomation>(客室1)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+      </RoomRateInformation>
+      <GuestInformation>
+        <GuestInformationList>
+          <GuestNameSingleByte>ｱﾝﾄﾞｳ ｺｳｼﾛｳ</GuestNameSingleByte>
+          <GuestKanjiName>安藤 孝四郎</GuestKanjiName>
+          <GuestGender>Unknown</GuestGender>
+          <GuestPhoneNumber>09084930016</GuestPhoneNumber>
+          <GuestEmergencyPhoneNumber>09084930016</GuestEmergencyPhoneNumber>
+          <GuestEmail>happo@tb4.so-net.ne.jp</GuestEmail>
+          <GuestStateProvidence>東京都世田谷区用賀2-25-2-210</GuestStateProvidence>
+          <GuestPostalCode>1580097</GuestPostalCode>
+        </GuestInformationList>
+      </GuestInformation>
+    </RoomAndGuestList>
+  </RoomAndGuestInformation>
+  <Member>
+    <TotalAccommodationDecleasePoints>212000</TotalAccommodationDecleasePoints>
+    <AmountClaimed>212000</AmountClaimed>
+  </Member>
+</AllotmentBookingReport>

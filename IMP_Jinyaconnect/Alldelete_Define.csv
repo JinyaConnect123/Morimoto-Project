@@ -1,0 +1,3 @@
+ps__RsvAccount__c, ps__LeadIndex__c, ps__Lead__c, ps__Room__c, ps__PlanDetail__c, ps__Plan__c, ps__PLforcast__c, ps__Estimate__c, ps__ProfitandLoss__c, ps__Customersurvey__c, ps__FoodMenu__c, ps__Worker__c, ps__Rank__c, ps__TIME__c, ps__Type__c, ps__BookingEstimateItem__c, 
+ps__TypeOfRooms__c, ps__CustomerRANK__c, ps__Yadochou__c, ps__Guestbookcustomer__c, ps__Jinyakeyword__c, ps__BookingPlus__c, ps__AutoSeqNumber__c, ps__BookingTimeTable__c, ps__RoomsStatus__c, ps__MX_900IP__c, ps__MessageItem__c, ps__DP__c, ps__OP__c, ps__GP__c, 
+ps__AccountMaster__c, ps__TimeManagement__c, Account, Contact

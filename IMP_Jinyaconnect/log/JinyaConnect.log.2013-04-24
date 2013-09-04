@@ -1,0 +1,499 @@
+2013/04/24 13:03:20.429 [Timer-0] 1226 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 13:03:20.466 [Timer-0] 1263 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 13:03:20.932 [Timer-0] 1729 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 13:03:21.149 [Timer-0] 1946 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 13:15:42.245 [Timer-0] 662  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 13:15:42.281 [Timer-0] 698  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 13:15:42.730 [Timer-0] 1147 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 13:15:42.942 [Timer-0] 1359 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 13:17:51.302 [Timer-0] 83169 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 13:17:51.305 [Timer-0] 83172 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 13:17:51.705 [Timer-0] 83572 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 13:17:52.065 [Timer-0] 83932 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 13:18:41.455 [Timer-0] 9516 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 13:18:41.458 [Timer-0] 9519 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 13:18:41.827 [Timer-0] 9888 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 13:18:42.025 [Timer-0] 10086 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 14:59:53.636 [Timer-0] 661  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 14:59:53.639 [Timer-0] 664  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 14:59:54.026 [Timer-0] 1051 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 14:59:54.232 [Timer-0] 1257 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:00:28.435 [Timer-0] 35460 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:00:53.562 [Timer-0] 60587 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:00:53.562 [Timer-0] 60587 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:00:53.575 [Timer-0] 60600 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:00:55.396 [Timer-0] 62421 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:01:36.735 [Timer-0] 620  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:01:36.738 [Timer-0] 623  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:01:37.119 [Timer-0] 1004 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 15:01:37.333 [Timer-0] 1218 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:01:59.324 [Timer-0] 23209 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:02:36.606 [Timer-0] 60491 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:02:36.606 [Timer-0] 60491 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:02:36.613 [Timer-0] 60498 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:02:39.647 [Timer-0] 63532 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:03:47.800 [Timer-0] 685  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:03:47.803 [Timer-0] 688  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:03:48.180 [Timer-0] 1065 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 15:03:48.435 [Timer-0] 1320 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:04:09.449 [Timer-0] 22334 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:04:47.621 [Timer-0] 60506 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:04:47.622 [Timer-0] 60507 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:04:47.630 [Timer-0] 60515 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:04:49.851 [Timer-0] 62736 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:05:47.630 [Timer-0] 120515 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:05:47.630 [Timer-0] 120515 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:05:47.641 [Timer-0] 120526 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:05:50.305 [Timer-0] 123190 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:06:47.622 [Timer-0] 180507 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:06:47.623 [Timer-0] 180508 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:06:47.629 [Timer-0] 180514 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:06:50.322 [Timer-0] 183207 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:07:47.635 [Timer-0] 240520 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:07:47.635 [Timer-0] 240520 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:07:47.645 [Timer-0] 240530 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:07:49.476 [Timer-0] 242361 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:08:47.626 [Timer-0] 300511 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:08:47.626 [Timer-0] 300511 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:08:47.635 [Timer-0] 300520 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:08:49.612 [Timer-0] 302497 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:09:54.017 [Timer-0] 797  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:09:54.021 [Timer-0] 801  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:09:54.477 [Timer-0] 1257 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 15:09:54.732 [Timer-0] 1512 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:10:49.106 [Timer-0] 55886 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:10:53.791 [Timer-0] 60571 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:10:53.792 [Timer-0] 60572 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:10:53.799 [Timer-0] 60579 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:10:55.434 [Timer-0] 62214 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:11:53.823 [Timer-0] 120603 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:11:53.824 [Timer-0] 120604 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:11:53.835 [Timer-0] 120615 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:11:55.331 [Timer-0] 122111 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:12:53.837 [Timer-0] 180617 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:12:53.837 [Timer-0] 180617 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:12:53.843 [Timer-0] 180623 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:12:56.281 [Timer-0] 183061 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:13:53.853 [Timer-0] 240633 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:13:53.853 [Timer-0] 240633 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:13:53.860 [Timer-0] 240640 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:13:55.483 [Timer-0] 242263 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:14:53.785 [Timer-0] 300565 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:14:53.785 [Timer-0] 300565 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:14:53.794 [Timer-0] 300574 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:14:55.379 [Timer-0] 302159 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:15:53.834 [Timer-0] 360614 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:15:53.834 [Timer-0] 360614 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:15:53.841 [Timer-0] 360621 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:15:56.419 [Timer-0] 363199 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:16:53.787 [Timer-0] 420567 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:16:53.787 [Timer-0] 420567 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:16:53.794 [Timer-0] 420574 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:16:56.463 [Timer-0] 423243 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:17:53.771 [Timer-0] 480551 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:17:53.771 [Timer-0] 480551 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:17:53.778 [Timer-0] 480558 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:17:56.166 [Timer-0] 482946 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:18:53.825 [Timer-0] 540605 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:18:53.825 [Timer-0] 540605 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:18:53.840 [Timer-0] 540620 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:18:56.389 [Timer-0] 543169 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:19:53.779 [Timer-0] 600559 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:19:53.780 [Timer-0] 600560 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:19:53.786 [Timer-0] 600566 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:19:55.765 [Timer-0] 602545 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:20:53.779 [Timer-0] 660559 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:20:53.779 [Timer-0] 660559 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:20:53.801 [Timer-0] 660581 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:20:55.756 [Timer-0] 662536 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:21:53.851 [Timer-0] 720631 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:21:53.851 [Timer-0] 720631 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:21:53.857 [Timer-0] 720637 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:21:56.976 [Timer-0] 723756 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:22:53.780 [Timer-0] 780560 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:22:53.781 [Timer-0] 780561 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:22:53.787 [Timer-0] 780567 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:22:55.746 [Timer-0] 782526 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:23:53.846 [Timer-0] 840626 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:23:53.846 [Timer-0] 840626 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:23:53.854 [Timer-0] 840634 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:23:59.006 [Timer-0] 845786 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:24:53.811 [Timer-0] 900591 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:24:53.811 [Timer-0] 900591 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:24:53.818 [Timer-0] 900598 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:24:55.478 [Timer-0] 902258 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:25:53.781 [Timer-0] 960561 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:25:53.781 [Timer-0] 960561 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:25:53.799 [Timer-0] 960579 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:25:55.748 [Timer-0] 962528 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:26:53.776 [Timer-0] 1020556 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:26:53.776 [Timer-0] 1020556 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:26:53.784 [Timer-0] 1020564 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:26:55.731 [Timer-0] 1022511 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:27:53.781 [Timer-0] 1080561 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:27:53.781 [Timer-0] 1080561 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:27:53.787 [Timer-0] 1080567 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:27:55.850 [Timer-0] 1082630 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:28:53.773 [Timer-0] 1140553 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:28:53.773 [Timer-0] 1140553 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:28:53.779 [Timer-0] 1140559 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:28:56.350 [Timer-0] 1143130 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:29:53.782 [Timer-0] 1200562 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 15:29:53.782 [Timer-0] 1200562 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 15:29:53.788 [Timer-0] 1200568 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 15:29:56.568 [Timer-0] 1203348 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:37:22.540 [Timer-0] 1342 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:37:22.560 [Timer-0] 1362 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:37:23.147 [Timer-0] 1949 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 17:37:23.375 [Timer-0] 2177 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:38:00.868 [Timer-0] 39670 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:38:22.015 [Timer-0] 60817 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:38:22.015 [Timer-0] 60817 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:38:22.020 [Timer-0] 60822 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:38:23.937 [Timer-0] 62739 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:39:22.071 [Timer-0] 120873 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:39:22.071 [Timer-0] 120873 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:39:22.077 [Timer-0] 120879 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:39:24.960 [Timer-0] 123762 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:40:01.787 [Timer-0] 844  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:40:01.802 [Timer-0] 859  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:40:02.202 [Timer-0] 1259 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 17:40:02.412 [Timer-0] 1469 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:40:18.687 [Timer-0] 17744 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:41:01.545 [Timer-0] 60602 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:41:01.546 [Timer-0] 60603 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:41:01.553 [Timer-0] 60610 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:41:03.256 [Timer-0] 62313 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:42:01.544 [Timer-0] 120601 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:42:01.544 [Timer-0] 120601 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:42:01.550 [Timer-0] 120607 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:42:03.486 [Timer-0] 122543 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:47:34.154 [Timer-0] 451  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:47:34.157 [Timer-0] 454  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:47:34.504 [Timer-0] 801  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 17:47:34.688 [Timer-0] 985  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:47:57.996 [Timer-0] 24293 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:48:34.124 [Timer-0] 60421 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:48:34.125 [Timer-0] 60422 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:48:34.131 [Timer-0] 60428 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:48:36.013 [Timer-0] 62310 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:49:34.124 [Timer-0] 120421 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:49:34.125 [Timer-0] 120422 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:49:34.130 [Timer-0] 120427 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:49:37.045 [Timer-0] 123342 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:50:34.119 [Timer-0] 180416 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:50:34.119 [Timer-0] 180416 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:50:34.125 [Timer-0] 180422 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:50:37.038 [Timer-0] 183335 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:51:34.129 [Timer-0] 240426 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:51:34.130 [Timer-0] 240427 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:51:34.137 [Timer-0] 240434 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:51:36.001 [Timer-0] 242298 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:52:34.120 [Timer-0] 300417 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:52:34.120 [Timer-0] 300417 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:52:34.125 [Timer-0] 300422 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:52:37.037 [Timer-0] 303334 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:53:34.134 [Timer-0] 360431 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:53:34.135 [Timer-0] 360432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:53:34.143 [Timer-0] 360440 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:53:36.004 [Timer-0] 362301 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:54:34.128 [Timer-0] 420425 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:54:34.129 [Timer-0] 420426 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:54:34.134 [Timer-0] 420431 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:54:36.210 [Timer-0] 422507 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:55:24.100 [Timer-0] 481  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:55:24.103 [Timer-0] 484  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:55:24.442 [Timer-0] 823  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 17:55:24.626 [Timer-0] 1007 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:56:31.770 [Timer-0] 68151 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:56:31.848 [Timer-0] 68229 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:56:31.848 [Timer-0] 68229 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:56:31.853 [Timer-0] 68234 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:56:33.758 [Timer-0] 70139 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:57:24.005 [Timer-0] 120386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:57:24.006 [Timer-0] 120387 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:57:24.011 [Timer-0] 120392 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:57:26.993 [Timer-0] 123374 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:58:24.000 [Timer-0] 180381 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:58:24.000 [Timer-0] 180381 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:58:24.006 [Timer-0] 180387 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:58:25.767 [Timer-0] 182148 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:59:24.001 [Timer-0] 240382 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 17:59:24.002 [Timer-0] 240383 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 17:59:24.009 [Timer-0] 240390 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 17:59:26.175 [Timer-0] 242556 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:00:24.005 [Timer-0] 300386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:00:24.005 [Timer-0] 300386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:00:24.010 [Timer-0] 300391 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:00:26.776 [Timer-0] 303157 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:01:24.024 [Timer-0] 360405 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:01:24.025 [Timer-0] 360406 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:01:24.033 [Timer-0] 360414 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:01:27.002 [Timer-0] 363383 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:02:24.002 [Timer-0] 420383 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:02:24.002 [Timer-0] 420383 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:02:24.008 [Timer-0] 420389 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:02:25.950 [Timer-0] 422331 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:03:24.050 [Timer-0] 480431 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:03:24.050 [Timer-0] 480431 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:03:24.055 [Timer-0] 480436 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:03:26.002 [Timer-0] 482383 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:04:24.004 [Timer-0] 540385 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:04:24.005 [Timer-0] 540386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:04:24.010 [Timer-0] 540391 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:04:29.421 [Timer-0] 545802 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:05:24.000 [Timer-0] 600381 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:05:24.001 [Timer-0] 600382 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:05:24.006 [Timer-0] 600387 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:05:26.151 [Timer-0] 602532 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:06:24.003 [Timer-0] 660384 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:06:24.003 [Timer-0] 660384 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:06:24.009 [Timer-0] 660390 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:06:25.923 [Timer-0] 662304 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:07:23.999 [Timer-0] 720380 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:07:24.000 [Timer-0] 720381 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:07:24.005 [Timer-0] 720386 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:07:26.137 [Timer-0] 722518 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:08:24.004 [Timer-0] 780385 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:08:24.005 [Timer-0] 780386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:08:24.010 [Timer-0] 780391 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:08:25.940 [Timer-0] 782321 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:09:24.006 [Timer-0] 840387 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:09:24.006 [Timer-0] 840387 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:09:24.011 [Timer-0] 840392 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:09:26.782 [Timer-0] 843163 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:10:24.004 [Timer-0] 900385 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:10:24.005 [Timer-0] 900386 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:10:24.009 [Timer-0] 900390 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:10:25.920 [Timer-0] 902301 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:11:24.006 [Timer-0] 960387 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:11:24.007 [Timer-0] 960388 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:11:24.012 [Timer-0] 960393 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:11:26.115 [Timer-0] 962496 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:12:24.009 [Timer-0] 1020390 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:12:24.009 [Timer-0] 1020390 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:12:24.014 [Timer-0] 1020395 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:12:26.928 [Timer-0] 1023309 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:13:24.010 [Timer-0] 1080391 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:13:24.011 [Timer-0] 1080392 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:13:24.018 [Timer-0] 1080399 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:13:26.017 [Timer-0] 1082398 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:32:49.351 [Timer-0] 465  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:32:49.353 [Timer-0] 467  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:32:49.683 [Timer-0] 797  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 18:32:49.872 [Timer-0] 986  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:33:12.183 [Timer-0] 23297 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:33:49.486 [Timer-0] 60600 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:33:49.486 [Timer-0] 60600 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:33:49.492 [Timer-0] 60606 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:33:51.433 [Timer-0] 62547 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:34:49.320 [Timer-0] 120434 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:34:49.320 [Timer-0] 120434 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:34:49.326 [Timer-0] 120440 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:34:51.840 [Timer-0] 122954 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:35:49.315 [Timer-0] 180429 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:35:49.315 [Timer-0] 180429 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:35:49.320 [Timer-0] 180434 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:35:51.213 [Timer-0] 182327 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:36:24.847 [Timer-0] 480  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:36:24.850 [Timer-0] 483  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:36:25.191 [Timer-0] 824  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 18:36:25.381 [Timer-0] 1014 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:36:49.315 [Timer-0] 240429 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:36:49.315 [Timer-0] 240429 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:36:49.321 [Timer-0] 240435 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:36:50.852 [Timer-0] 26485 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:36:52.009 [Timer-0] 243123 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:37:24.772 [Timer-0] 60405 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:37:24.772 [Timer-0] 60405 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:37:24.780 [Timer-0] 60413 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:37:26.628 [Timer-0] 62261 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:37:49.318 [Timer-0] 300432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:37:49.318 [Timer-0] 300432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:37:49.324 [Timer-0] 300438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:37:51.191 [Timer-0] 302305 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:38:10.252 [Timer-0] 475  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:38:10.254 [Timer-0] 477  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:38:10.585 [Timer-0] 808  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 18:38:10.771 [Timer-0] 994  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:38:30.167 [Timer-0] 20390 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:39:10.167 [Timer-0] 60390 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:39:10.167 [Timer-0] 60390 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:39:10.175 [Timer-0] 60398 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:39:13.102 [Timer-0] 63325 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:46:00.289 [Timer-0] 467  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:46:00.292 [Timer-0] 470  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:46:00.639 [Timer-0] 817  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 18:46:00.828 [Timer-0] 1006 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:46:21.578 [Timer-0] 21756 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:47:00.261 [Timer-0] 60439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:47:00.261 [Timer-0] 60439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:47:00.267 [Timer-0] 60445 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:47:02.224 [Timer-0] 62402 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:48:00.254 [Timer-0] 120432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:48:00.254 [Timer-0] 120432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:48:00.260 [Timer-0] 120438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:48:02.225 [Timer-0] 122403 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:49:00.254 [Timer-0] 180432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:49:00.254 [Timer-0] 180432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:49:00.260 [Timer-0] 180438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:49:01.998 [Timer-0] 182176 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:50:00.258 [Timer-0] 240436 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:50:00.258 [Timer-0] 240436 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:50:00.263 [Timer-0] 240441 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:50:03.226 [Timer-0] 243404 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:51:00.254 [Timer-0] 300432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:51:00.255 [Timer-0] 300433 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:51:00.260 [Timer-0] 300438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:51:02.805 [Timer-0] 302983 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:52:00.259 [Timer-0] 360437 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:52:00.259 [Timer-0] 360437 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:52:00.265 [Timer-0] 360443 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:52:03.213 [Timer-0] 363391 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:53:00.259 [Timer-0] 420437 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:53:00.259 [Timer-0] 420437 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:53:00.265 [Timer-0] 420443 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:53:01.985 [Timer-0] 422163 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:54:00.260 [Timer-0] 480438 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:54:00.260 [Timer-0] 480438 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:54:00.267 [Timer-0] 480445 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:54:03.210 [Timer-0] 483388 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:55:00.259 [Timer-0] 540437 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:55:00.260 [Timer-0] 540438 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:55:00.265 [Timer-0] 540443 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:55:01.970 [Timer-0] 542148 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:56:00.254 [Timer-0] 600432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:56:00.255 [Timer-0] 600433 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:56:00.260 [Timer-0] 600438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:56:02.372 [Timer-0] 602550 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:57:00.254 [Timer-0] 660432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:57:00.254 [Timer-0] 660432 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:57:00.260 [Timer-0] 660438 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:57:02.163 [Timer-0] 662341 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:58:00.261 [Timer-0] 720439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:58:00.261 [Timer-0] 720439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:58:00.266 [Timer-0] 720444 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:58:03.179 [Timer-0] 723357 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:59:18.850 [Timer-0] 460  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 18:59:18.852 [Timer-0] 462  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 18:59:19.184 [Timer-0] 794  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 18:59:19.371 [Timer-0] 981  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 18:59:45.221 [Timer-0] 26831 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:00:18.761 [Timer-0] 60371 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:00:18.762 [Timer-0] 60372 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:00:18.770 [Timer-0] 60380 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:00:21.199 [Timer-0] 62809 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:01:18.693 [Timer-0] 120303 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:01:18.693 [Timer-0] 120303 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:01:18.699 [Timer-0] 120309 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:01:43.062 [Timer-0] 617  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:01:43.065 [Timer-0] 620  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:01:43.442 [Timer-0] 997  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 19:01:43.646 [Timer-0] 1201 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:02:04.457 [Timer-0] 22012 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:02:42.888 [Timer-0] 60443 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:02:42.888 [Timer-0] 60443 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:02:42.895 [Timer-0] 60450 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:02:45.124 [Timer-0] 62679 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:03:42.889 [Timer-0] 120444 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:03:42.890 [Timer-0] 120445 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:03:42.897 [Timer-0] 120452 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:03:44.739 [Timer-0] 122294 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:04:42.895 [Timer-0] 180450 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:04:42.895 [Timer-0] 180450 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:04:42.901 [Timer-0] 180456 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:04:46.152 [Timer-0] 183707 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:05:42.887 [Timer-0] 240442 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:05:42.887 [Timer-0] 240442 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:05:42.893 [Timer-0] 240448 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:05:44.724 [Timer-0] 242279 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:06:37.493 [Timer-0] 507  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:06:37.496 [Timer-0] 510  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:06:37.828 [Timer-0] 842  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 19:06:38.031 [Timer-0] 1045 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:07:09.488 [Timer-0] 32502 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:07:37.467 [Timer-0] 60481 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:07:37.467 [Timer-0] 60481 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:07:37.473 [Timer-0] 60487 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:07:39.398 [Timer-0] 62412 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:08:37.397 [Timer-0] 120411 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:08:37.397 [Timer-0] 120411 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:08:37.403 [Timer-0] 120417 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:08:39.172 [Timer-0] 122186 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:09:30.401 [Timer-0] 435  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:09:30.404 [Timer-0] 438  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:09:30.741 [Timer-0] 775  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 19:09:30.937 [Timer-0] 971  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:09:51.535 [Timer-0] 21569 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:10:30.310 [Timer-0] 60344 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:10:30.310 [Timer-0] 60344 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:10:30.316 [Timer-0] 60350 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:10:32.221 [Timer-0] 62255 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:11:30.420 [Timer-0] 120454 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:11:30.421 [Timer-0] 120455 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:11:30.429 [Timer-0] 120463 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:11:33.034 [Timer-0] 123068 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:12:30.405 [Timer-0] 180439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:12:30.405 [Timer-0] 180439 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:12:30.411 [Timer-0] 180445 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:12:32.374 [Timer-0] 182408 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:13:30.313 [Timer-0] 240347 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:13:30.313 [Timer-0] 240347 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:13:30.319 [Timer-0] 240353 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:13:32.216 [Timer-0] 242250 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:14:30.305 [Timer-0] 300339 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:14:30.305 [Timer-0] 300339 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:14:30.311 [Timer-0] 300345 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:14:32.629 [Timer-0] 302663 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:15:10.559 [Timer-0] 604  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:15:10.562 [Timer-0] 607  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:15:10.944 [Timer-0] 989  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/24 19:15:11.145 [Timer-0] 1190 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:15:31.922 [Timer-0] 21967 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:16:10.429 [Timer-0] 60474 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:16:10.430 [Timer-0] 60475 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:16:10.436 [Timer-0] 60481 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:16:12.806 [Timer-0] 62851 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:17:10.421 [Timer-0] 120466 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:17:10.421 [Timer-0] 120466 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:17:10.429 [Timer-0] 120474 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:17:13.198 [Timer-0] 123243 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:18:10.426 [Timer-0] 180471 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:18:10.427 [Timer-0] 180472 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:18:10.434 [Timer-0] 180479 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:18:13.020 [Timer-0] 183065 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:19:10.426 [Timer-0] 240471 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:19:10.426 [Timer-0] 240471 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:19:10.432 [Timer-0] 240477 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:19:12.192 [Timer-0] 242237 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:20:10.426 [Timer-0] 300471 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:20:10.427 [Timer-0] 300472 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:20:10.434 [Timer-0] 300479 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:20:13.643 [Timer-0] 303688 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:21:10.426 [Timer-0] 360471 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:21:10.427 [Timer-0] 360472 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:21:10.433 [Timer-0] 360478 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:21:12.206 [Timer-0] 362251 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:22:10.365 [Timer-0] 420410 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:22:10.365 [Timer-0] 420410 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:22:10.374 [Timer-0] 420419 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:22:14.459 [Timer-0] 424504 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:23:10.428 [Timer-0] 480473 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:23:10.429 [Timer-0] 480474 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:23:10.435 [Timer-0] 480480 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:23:12.206 [Timer-0] 482251 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:24:10.437 [Timer-0] 540482 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:24:10.437 [Timer-0] 540482 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:24:10.443 [Timer-0] 540488 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:24:12.614 [Timer-0] 542659 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:25:10.428 [Timer-0] 600473 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:25:10.428 [Timer-0] 600473 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:25:10.434 [Timer-0] 600479 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:25:12.219 [Timer-0] 602264 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:26:10.432 [Timer-0] 660477 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:26:10.432 [Timer-0] 660477 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:26:10.442 [Timer-0] 660487 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/24 19:26:13.434 [Timer-0] 663479 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:27:10.507 [Timer-0] 720552 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/24 19:27:10.508 [Timer-0] 720553 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/24 19:27:10.533 [Timer-0] 720578 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0

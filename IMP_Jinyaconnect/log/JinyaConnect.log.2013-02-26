@@ -1,0 +1,20 @@
+2012/09/04 01:14:36.821 [Timer-0] 4293 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2012/09/04 01:14:36.823 [Timer-0] 4295 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:14:37.063 [Timer-0] 4535 WARN  org.apache.axis.utils.JavaUtils  - è¦æ±‚ã•ã‚ŒãŸã‚¯ãƒ©ã‚¹(javax.activation.DataHandler ã¨ javax.mail.internet.MimeMultipart)ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚Attachmentã‚µãƒãƒ¼ãƒˆãŒåˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ / [en]-(Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.)
+2012/09/04 01:14:37.187 [Timer-0] 4659 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2012/09/04 01:14:56.522 [Timer-0] 23994 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:15:00.215 [Timer-0] 27687 INFO  Rakujanconnect.utils.RakujanFileMover  - moveFile Start [R1_1 å˜æ³Šå˜å®¤ æ–°è¦.xml]
+2012/09/04 01:15:00.216 [Timer-0] 27688 INFO  Rakujanconnect.utils.RakujanFileMover  - moveFile end [R1_1 å˜æ³Šå˜å®¤ æ–°è¦.xml]
+2012/09/04 01:15:00.216 [Timer-0] 27688 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class
+2012/09/04 01:15:36.138 [Timer-0] 63610 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2012/09/04 01:15:36.138 [Timer-0] 63610 INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:15:36.141 [Timer-0] 63613 INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2012/09/04 01:15:37.694 [Timer-0] 65166 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:55:17.301 [Timer-0] 193  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2012/09/04 01:55:17.303 [Timer-0] 195  INFO  Rakujanconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:55:17.575 [Timer-0] 467  WARN  org.apache.axis.utils.JavaUtils  - —v‹‚³‚ê‚½ƒNƒ‰ƒX(javax.activation.DataHandler ‚Æ javax.mail.internet.MimeMultipart)‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñBAttachmentƒTƒ|[ƒg‚ª—˜—p‚Å‚«‚Ü‚¹‚ñB / [en]-(Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.)
+2012/09/04 01:55:17.722 [Timer-0] 614  INFO  Rakujanconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2012/09/04 01:55:43.682 [Timer-0] 26574 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class >connnectSFDC
+2012/09/04 01:55:47.700 [Timer-0] 30592 INFO  Rakujanconnect.utils.RakujanFileMover  - moveFile Start [R1_1 ’P”‘’Pº V‹K.xml]
+2012/09/04 01:55:47.700 [Timer-0] 30592 INFO  Rakujanconnect.utils.RakujanFileMover  - moveFile end [R1_1 ’P”‘’Pº V‹K.xml]
+2012/09/04 01:55:47.700 [Timer-0] 30592 INFO  Rakujanconnect.SyncProcessHandler  - CALL OUT:SyncProcessHandler.class

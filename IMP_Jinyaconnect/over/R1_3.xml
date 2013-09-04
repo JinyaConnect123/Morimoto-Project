@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AllotmentBookingReport>
+  <TransactionType>
+    <DataFrom>RAKUJAN</DataFrom>
+    <DataClassification>CancellationReport</DataClassification>
+    <DataID>477</DataID>
+    <SystemDate>2012-08-27</SystemDate>
+    <SystemTime>13:02:02</SystemTime>
+  </TransactionType>
+  <ResultInformation>
+    <ResultCode>0</ResultCode>
+  </ResultInformation>
+  <AccommodationInformation>
+    <AccommodationName>元湯陣屋</AccommodationName>
+    <AccommodationCode>D01C2127</AccommodationCode>
+  </AccommodationInformation>
+  <SalesOfficeInformation>
+    <SalesOfficeCompanyCode>40</SalesOfficeCompanyCode>
+    <SalesOfficeCompanyName>予約プロ(達人)</SalesOfficeCompanyName>
+  </SalesOfficeInformation>
+  <BasicInformation>
+    <TravelAgencyBookingNumber>A001092673</TravelAgencyBookingNumber>
+    <TravelAgencyBookingDate>2012-08-27</TravelAgencyBookingDate>
+    <TravelAgencyBookingTime>12:23:00</TravelAgencyBookingTime>
+    <TravelAgencyReportNumber>477</TravelAgencyReportNumber>
+    <GuestOrGroupNameSingleByte>ﾔﾏｶﾞ ﾃｽﾄ</GuestOrGroupNameSingleByte>
+    <GuestOrGroupNameDoubleByte>やまが　てすと</GuestOrGroupNameDoubleByte>
+    <GuestOrGroupNameKanjiName>山鹿　テスト</GuestOrGroupNameKanjiName>
+    <CheckInDate>2012-09-05</CheckInDate>
+    <CheckInTime>15:30:00</CheckInTime>
+    <CheckOutDate>2012-09-06</CheckOutDate>
+    <Nights>1</Nights>
+    <TotalRoomCount>1</TotalRoomCount>
+    <GrandTotalPaxCount>3</GrandTotalPaxCount>
+    <TotalPaxMaleCount>1</TotalPaxMaleCount>
+    <TotalPaxFemaleCount>1</TotalPaxFemaleCount>
+    <TotalChildA70Count>1</TotalChildA70Count>
+    <Status>Cancel</Status>
+    <PackagePlanName>【当館人気No.1】季節の本格日本料理を堪能「特選会席」プラン</PackagePlanName>
+    <PackagePlanCode>430</PackagePlanCode>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>エステ＆炭酸泉90分コース</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>14000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>エステ＆炭酸泉120分コース</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>19000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>お土産（和牛シチュー　510g  2名様分)</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>2450</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>お土産（やまと豚の桜味噌漬け 20枚入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>3150</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>お土産（やまと豚の桜味噌漬け 10枚入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1575</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>お土産（陣屋どらやき　6個入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>960</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>【特選アラカルト】地元神奈川夢ポークのスペアリブ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1200</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>【特選アラカルト】黒毛和牛ステーキ　200ｇ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>6200</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>【特選アラカルト】黒毛和牛ステーキ　100ｇ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>3200</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-09-05</OptionDate>
+      <Name>ご朝食（不要時）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>-2000</OptionRate>
+    </Option>
+    <MealCondition>1night2meals</MealCondition>
+    <SpecificMealCondition>1泊2食</SpecificMealCondition>
+    <SpecialServiceRequest>接続テストです</SpecialServiceRequest>
+  </BasicInformation>
+  <BasicRateInformation>
+    <RoomRateOrPersonalRate>PersonalRate</RoomRateOrPersonalRate>
+    <TaxServiceFee>Unknown</TaxServiceFee>
+    <TotalAccommodationCharge>87000</TotalAccommodationCharge>
+  </BasicRateInformation>
+  <RoomAndGuestInformation>
+    <RoomAndGuestList>
+      <RoomInformation>
+        <RoomTypeCode>R004</RoomTypeCode>
+        <RoomTypeName>ベッドルーム付き和洋室</RoomTypeName>
+        <PerRoomPaxCount>3</PerRoomPaxCount>
+        <RoomPaxMaleCount>2</RoomPaxMaleCount>
+        <RoomChildA70Count>1</RoomChildA70Count>
+        <RoomSpecialRequest>ご朝食（不要時）</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ステーキ　100ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ステーキ　200ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（陣屋どらやき　6個入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 10枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 20枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（和牛シチュー　510g  2名様分)</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉120分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉90分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>(客室1)</RoomSpecialRequest>
+        <RoomSpecialRequest>子供A(客室1)</RoomSpecialRequest>
+        <RoomTypeAgent>40</RoomTypeAgent>
+      </RoomInformation>
+      <RoomRateInformation>
+        <RoomDate>2012-09-05</RoomDate>
+        <PerPaxRate>29000</PerPaxRate>
+        <PerChildA70Rate>29000</PerChildA70Rate>
+        <TotalPerRoomRate>87000</TotalPerRoomRate>
+        <RoomRateDetailInfomation>
+          <RoomRate>-2000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>ご朝食（不要時）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>3200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ステーキ　100ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>6200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ステーキ　200ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>960</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（陣屋どらやき　6個入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1575</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 10枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>3150</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 20枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>2450</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（和牛シチュー　510g  2名様分)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>19000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉120分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>14000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉90分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RateCategory>1</RateCategory>
+          <RoomRate>29000</RoomRate>
+          <RatePaxCount>2</RatePaxCount>
+          <RateDetailInfomation>(客室1)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RateCategory>2</RateCategory>
+          <RoomRate>29000</RoomRate>
+          <RatePaxCount>1</RatePaxCount>
+          <RateDetailInfomation>子供A(客室1)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+      </RoomRateInformation>
+      <GuestInformation>
+        <GuestInformationList>
+          <GuestNameSingleByte>ﾔﾏｶﾞ ﾃｽﾄ</GuestNameSingleByte>
+          <GuestKanjiName>山鹿　テスト</GuestKanjiName>
+          <GuestGender>Unknown</GuestGender>
+          <GuestPhoneNumber>09023992545</GuestPhoneNumber>
+          <GuestEmergencyPhoneNumber>09023992545</GuestEmergencyPhoneNumber>
+          <GuestEmail>satoshi_yamaga@jinya-inn.com</GuestEmail>
+          <GuestStateProvidence>神奈川県秦野市鶴巻北3-12-3</GuestStateProvidence>
+          <GuestPostalCode>2570001</GuestPostalCode>
+        </GuestInformationList>
+      </GuestInformation>
+    </RoomAndGuestList>
+  </RoomAndGuestInformation>
+  <Member>
+    <TotalAccommodationDecleasePoints>87000</TotalAccommodationDecleasePoints>
+    <AmountClaimed>87000</AmountClaimed>
+  </Member>
+</AllotmentBookingReport>

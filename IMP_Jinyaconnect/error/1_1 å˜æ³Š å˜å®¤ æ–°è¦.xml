@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AllotmentBookingReport>
+    <TransactionType>
+        <DataFrom>FromTravelAgency</DataFrom>
+        <DataClassification>NewBookReport</DataClassification>
+        <DataID>62728370-1</DataID>
+        <SystemDate>2012-08-19</SystemDate>
+    </TransactionType>
+    <AccommodationInformation>
+        <AccommodationName>元湯陣屋</AccommodationName>
+        <AccommodationCode>4254-002</AccommodationCode>
+    </AccommodationInformation>
+    <SalesOfficeInformation>
+        <SalesOfficeCompanyName>JTB</SalesOfficeCompanyName>
+        <SalesOfficeName>赤　坂</SalesOfficeName>
+        <SalesOfficeCode>0001445</SalesOfficeCode>
+        <SalesOfficePersonInCharge>ｷｸﾁ</SalesOfficePersonInCharge>
+        <SalesOfficePhoneNumber>03-3580-4253</SalesOfficePhoneNumber>
+    </SalesOfficeInformation>
+    <BasicInformation>
+        <TravelAgencyBookingNumber>LMF9UH-01</TravelAgencyBookingNumber>
+        <TravelAgencyBookingDate>2012-07-02</TravelAgencyBookingDate>
+        <TravelAgencyBookingTime>00:00:00</TravelAgencyBookingTime>
+        <TravelAgencyReportNumber>02349</TravelAgencyReportNumber>
+        <GuestOrGroupNameSingleByte>ﾊﾗ ﾏｻﾀｶ</GuestOrGroupNameSingleByte>
+        <GuestOrGroupNameKanjiName>原　正隆</GuestOrGroupNameKanjiName>
+        <CheckInDate>2012-07-14</CheckInDate>
+        <CheckInTime>15:00:00</CheckInTime>
+        <CheckOutDate>2012-07-15</CheckOutDate>
+        <Nights>1</Nights>
+        <TotalRoomCount>1</TotalRoomCount>
+        <GrandTotalPaxCount>2</GrandTotalPaxCount>
+        <TotalPaxMaleCount>1</TotalPaxMaleCount>
+        <TotalPaxFemaleCount>1</TotalPaxFemaleCount>
+        <PackagePlanName>スペシャルプラン</PackagePlanName>
+        <PackagePlanCode>90T9J21S000</PackagePlanCode>
+        <PackagePlanContent>(S00)０３</PackagePlanContent>
+        <MealCondition>1night2meals</MealCondition>
+        <SpecificMealCondition>None Specified</SpecificMealCondition>
+        <MealPlace>夕 朝 </MealPlace>
+        <OtherServiceInformation>ｲﾘｺﾐｸﾙﾏ</OtherServiceInformation>
+    </BasicInformation>
+    <BasicRateInformation>
+        <RoomRateOrPersonalRate>PersonalRate</RoomRateOrPersonalRate>
+        <TaxServiceFee>IncludingServiceAndTax</TaxServiceFee>
+        <TotalAccommodationCharge>55600</TotalAccommodationCharge>
+    </BasicRateInformation>
+    <RoomAndGuestInformation>
+        <RoomAndGuestList>
+            <RoomInformation>
+                <RoomTypeCode>03</RoomTypeCode>
+                <RoomTypeName>03</RoomTypeName>
+                <ViewType>庭園</ViewType>
+                <PerRoomPaxCount>2</PerRoomPaxCount>
+                <RoomPaxMaleCount>1</RoomPaxMaleCount>
+                <RoomPaxFemaleCount>1</RoomPaxFemaleCount>
+                <Facilities>トイレ  冷暖房付</Facilities>
+            </RoomInformation>
+            <RoomRateInformation>
+                <RoomDate>2012-07-14</RoomDate>
+                <PerPaxRate>27800</PerPaxRate>
+            </RoomRateInformation>
+        </RoomAndGuestList>
+    </RoomAndGuestInformation>
+    <RisaplsInformation>
+        <RisaplsCommonInformation>
+            <Basic>
+                <SalesOfficeCompanyCode>01</SalesOfficeCompanyCode>
+                <TelegramDiv></TelegramDiv>
+                <RisaplsDataID></RisaplsDataID>
+                <RisaplsTelegramNumber></RisaplsTelegramNumber>
+                <TelegramData>JTB
+*************(HI) ｵｷﾔｸｻﾏﾂｳﾁNo:02349** 2012/07/03 02:58 **(ｷﾞﾖｳﾑﾂｳﾁNo:02612)**
+JTB通知 NH-01   元湯陣屋                                  4254-002
+                赤　坂                                    0001445
+                TEL:03-3580-4253                          担当：ｷｸﾁ       
+予約通知  (手配) 90T9J21S000                                          
+90T9J21-0   スペシャルプラン                              
+ＬＭＦ９ＵＨ‐０１
+ﾊﾗ ﾏｻﾀｶ               原　正隆            
+2012/07/14  宿泊合計金額（販売料金）    \55600(消費税サービス料込み)    
+            男　  1名 女　  1名 
+            １泊２食            夕：                                         
+                                朝：                                         
+            (S00) ０３
+            03-    1   
+            部屋１      大人男        \27800 X   1
+                        大人女        \27800 X   1
+            計   1室  和室              庭園 
+                      トイレ  冷暖房付  
+到着予定    15:00                                                    
+メッセージ  ｲﾘｺﾐｸﾙﾏ                                                          
+操作日時：2012/07/02 12:32
+
+***
+
+</TelegramData>
+                <TotalPaxManCount>2</TotalPaxManCount>
+                <Version>2.0</Version>
+                <AccommodationId>X36969</AccommodationId>
+            </Basic>
+            <Allotment>
+                <AssignDiv>1</AssignDiv>
+                <GenderDiv>1</GenderDiv>
+                <HandleDiv>1</HandleDiv>
+                <RsvUserDiv>0</RsvUserDiv>
+                <UseDiv>0</UseDiv>
+            </Allotment>
+            <RoomAndRoomRateInformation>
+                <RoomInformation>
+                    <RoomTypeCode>03</RoomTypeCode>
+                    <RoomTypeName>03</RoomTypeName>
+                    <ViewType>庭園</ViewType>
+                    <PerRoomPaxCount>2</PerRoomPaxCount>
+                    <RoomPaxMaleCount>1</RoomPaxMaleCount>
+                    <RoomPaxFemaleCount>1</RoomPaxFemaleCount>
+                    <Facilities>トイレ  冷暖房付</Facilities>
+                    <RoomTypeAgent>01</RoomTypeAgent>
+                    <RoomFrame>--</RoomFrame>
+                </RoomInformation>
+                <RoomRateInformation>
+                    <RoomDate>2012-07-14</RoomDate>
+                    <PerPaxRate>27800</PerPaxRate>
+                    <PerMaleRate>27800</PerMaleRate>
+                    <PerFemaleRate>27800</PerFemaleRate>
+                </RoomRateInformation>
+            </RoomAndRoomRateInformation>
+        </RisaplsCommonInformation>
+    </RisaplsInformation>
+</AllotmentBookingReport>

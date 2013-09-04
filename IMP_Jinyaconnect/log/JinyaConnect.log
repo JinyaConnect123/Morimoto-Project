@@ -1,0 +1,28 @@
+2013/04/30 14:27:40.887 [Timer-0] 3533 INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 14:27:40.948 [Timer-0] 3594 INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 14:27:41.803 [Timer-0] 4449 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 14:27:42.084 [Timer-0] 4730 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 14:51:59.304 [Timer-0] 749  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 14:51:59.307 [Timer-0] 752  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 14:51:59.735 [Timer-0] 1180 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 14:51:59.942 [Timer-0] 1387 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 15:36:35.720 [Timer-0] 576  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 15:36:35.722 [Timer-0] 578  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 15:36:36.105 [Timer-0] 961  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 15:36:36.304 [Timer-0] 1160 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 15:47:08.266 [Timer-0] 469  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 15:47:08.271 [Timer-0] 474  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 15:47:08.611 [Timer-0] 814  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 15:47:08.798 [Timer-0] 1001 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 15:47:36.891 [Timer-0] 451  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 15:47:36.894 [Timer-0] 454  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 15:47:37.251 [Timer-0] 811  WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 15:47:37.449 [Timer-0] 1009 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 15:50:26.759 [Timer-0] 721  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 15:50:26.761 [Timer-0] 723  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 15:50:27.181 [Timer-0] 1143 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 15:50:27.401 [Timer-0] 1363 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0
+2013/04/30 15:51:59.614 [Timer-0] 695  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class
+2013/04/30 15:51:59.624 [Timer-0] 705  INFO  IMP_Jinyaconnect.SyncProcessHandler  - CALL IN:SyncProcessHandler.class >connnectSFDC
+2013/04/30 15:52:00.131 [Timer-0] 1212 WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2013/04/30 15:52:00.385 [Timer-0] 1466 INFO  IMP_Jinyaconnect.SyncProcessHandler  - [SyncProcessHandler.class >connnectSFDC>LoginUrl:]https://login.salesforce.com/services/Soap/u/24.0

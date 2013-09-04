@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Web Services API : ps.BI_TR_LeadInfoSync
+-->
+<definitions targetNamespace="http://soap.sforce.com/schemas/class/ps/BI_TR_LeadInfoSync" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.sforce.com/schemas/class/ps/BI_TR_LeadInfoSync">
+ <types>
+  <xsd:schema elementFormDefault="qualified" targetNamespace="http://soap.sforce.com/schemas/class/ps/BI_TR_LeadInfoSync">
+   <xsd:element name="DebuggingInfo">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="debugLog" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:simpleType name="ID">
+    <xsd:restriction base="xsd:string">
+     <xsd:length value="18"/>
+     <xsd:pattern value="[a-zA-Z0-9]{18}"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogCategory">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Workflow"/>
+     <xsd:enumeration value="Validation"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Apex_code"/>
+     <xsd:enumeration value="Apex_profiling"/>
+     <xsd:enumeration value="Visualforce"/>
+     <xsd:enumeration value="System"/>
+     <xsd:enumeration value="All"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="LogCategoryLevel">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="Internal"/>
+     <xsd:enumeration value="Finest"/>
+     <xsd:enumeration value="Finer"/>
+     <xsd:enumeration value="Fine"/>
+     <xsd:enumeration value="Debug"/>
+     <xsd:enumeration value="Info"/>
+     <xsd:enumeration value="Warn"/>
+     <xsd:enumeration value="Error"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:complexType name="LogInfo">
+    <xsd:sequence>
+     <xsd:element name="category" type="tns:LogCategory"/>
+     <xsd:element name="level" type="tns:LogCategoryLevel"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:simpleType name="LogType">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="None"/>
+     <xsd:enumeration value="Debugonly"/>
+     <xsd:enumeration value="Db"/>
+     <xsd:enumeration value="Profiling"/>
+     <xsd:enumeration value="Callout"/>
+     <xsd:enumeration value="Detail"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:element name="DebuggingHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="categories" minOccurs="0" maxOccurs="unbounded" type="tns:LogInfo"/>
+      <xsd:element name="debugLevel" type="tns:LogType"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="CallOptions">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="client" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="SessionHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="sessionId" type="xsd:string"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="AllowFieldTruncationHeader">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="allowFieldTruncation" type="xsd:boolean"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="BI_TR_GuestInfo">
+    <xsd:sequence>
+     <xsd:element name="GuestAge" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="GuestDateOfBirth" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="GuestEmail" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestEmergencyPhoneNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestGender" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestKanjiName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestNameSingleByte" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestPhoneNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestStateProvidence" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestSurName" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BI_TR_RoomAndGuestInfo">
+    <xsd:sequence>
+     <xsd:element name="guestLst" minOccurs="0" maxOccurs="unbounded" type="tns:BI_TR_GuestInfo" nillable="true"/>
+     <xsd:element name="room" minOccurs="0" type="tns:BI_TR_RoomsInfo" nillable="true"/>
+     <xsd:element name="roomRateLst" minOccurs="0" maxOccurs="unbounded" type="tns:BI_TR_RoomRateInfomation" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BI_TR_RoomRateInfomation">
+    <xsd:sequence>
+     <xsd:element name="PerChildA70Rate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="PerChildB50Rate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="PerChildC30Rate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="PerChildDRate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="PerPaxRate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomDate" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="TotalPerRoomRate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="TotalPerRoomServiceFee" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="TotalRoomHotSpringTax" minOccurs="0" type="xsd:int" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BI_TR_RoomsInfo">
+    <xsd:sequence>
+     <xsd:element name="AssignedRoomNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="Facilities" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="PerRoomPaxCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomCategory" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="RoomChildA70Count" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomChildB50Count" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomChildC30Count" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomChildDNoneCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomPaxFemaleCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomPaxMaleCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="RoomSpecialRequest" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="RoomTypeCode" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="RoomTypeName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SmokingOrNonSmoking" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="ViewType" minOccurs="0" type="xsd:string" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BI_TR_SyncInfo">
+    <xsd:sequence>
+     <xsd:element name="AccommodationCode" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="AccommodationName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="BareNetRate" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="CheckInDate" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="CheckInTime" minOccurs="0" type="xsd:time" nillable="true"/>
+     <xsd:element name="CheckOutDate" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="CheckOutTime" minOccurs="0" type="xsd:time" nillable="true"/>
+     <xsd:element name="CreditCardAuthority" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="CreditCardNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="DataFrom" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="DataID" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="dmlAction" minOccurs="0" type="tns:BI_TR_DmlAction" nillable="true"/>
+     <xsd:element name="GrandTotalPaxCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="GuestOrGroupNameDoubleByte" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestOrGroupNameKanjiName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="GuestOrGroupNameSingleByte" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="MealCondition" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="ModificationPoint" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="Nights" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="OtherServiceInformation" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="PackagePlanCode" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="PackagePlanName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="Payment" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="roomAndGuestLst" minOccurs="0" maxOccurs="unbounded" type="tns:BI_TR_RoomAndGuestInfo" nillable="true"/>
+     <xsd:element name="RoomRateOrPersonalRate" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficeCode" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficeCompanyCode" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficeCompanyName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficeName" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficePersonInCharge" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SalesOfficePhoneNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SpecialServiceRequest" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="SystemDate" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="SystimTime" minOccurs="0" type="xsd:time" nillable="true"/>
+     <xsd:element name="TaxServiceFee" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="TotalAccommodationCharge" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="TotalRoomCount" minOccurs="0" type="xsd:int" nillable="true"/>
+     <xsd:element name="TravelAgencyBookingDate" minOccurs="0" type="xsd:date" nillable="true"/>
+     <xsd:element name="TravelAgencyBookingNumber" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="TravelAgencyBookingTime" minOccurs="0" type="xsd:time" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BI_TR_SyncResult">
+    <xsd:sequence>
+     <xsd:element name="message" minOccurs="0" type="xsd:string" nillable="true"/>
+     <xsd:element name="result" minOccurs="0" type="tns:BI_TR_Result" nillable="true"/>
+     <xsd:element name="sfdcId" minOccurs="0" type="tns:ID" nillable="true"/>
+     <xsd:element name="sfdcJobId" minOccurs="0" type="tns:ID" nillable="true"/>
+    </xsd:sequence>
+   </xsd:complexType>
+   <xsd:simpleType name="BI_TR_DmlAction">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="CANCEL"/>
+     <xsd:enumeration value="INS"/>
+     <xsd:enumeration value="UPD"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="BI_TR_Result">
+    <xsd:restriction base="xsd:string">
+     <xsd:enumeration value="NG"/>
+     <xsd:enumeration value="OK"/>
+     <xsd:enumeration value="WAIT"/>
+    </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:element name="upsertLeadInfo">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="bookingInfo" type="tns:BI_TR_SyncInfo" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="upsertLeadInfoResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="result" type="tns:BI_TR_SyncResult" nillable="true"/>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+  </xsd:schema>
+ </types>
+ <!-- Message for the header parts -->
+ <message name="Header">
+  <part name="AllowFieldTruncationHeader" element="tns:AllowFieldTruncationHeader"/>
+  <part name="CallOptions" element="tns:CallOptions"/>
+  <part name="DebuggingHeader" element="tns:DebuggingHeader"/>
+  <part name="DebuggingInfo" element="tns:DebuggingInfo"/>
+  <part name="SessionHeader" element="tns:SessionHeader"/>
+ </message>
+ <!-- Operation Messages -->
+ <message name="upsertLeadInfoRequest">
+  <part element="tns:upsertLeadInfo" name="parameters"/>
+ </message>
+ <message name="upsertLeadInfoResponse">
+  <part element="tns:upsertLeadInfoResponse" name="parameters"/>
+ </message>
+ <portType name="BI_TR_LeadInfoSyncPortType">
+  <operation name="upsertLeadInfo">
+   <input message="tns:upsertLeadInfoRequest"/>
+   <output message="tns:upsertLeadInfoResponse"/>
+  </operation>
+ </portType>
+ <binding name="BI_TR_LeadInfoSyncBinding" type="tns:BI_TR_LeadInfoSyncPortType">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="upsertLeadInfo">
+   <soap:operation soapAction=""/>
+   <input>
+    <soap:header use="literal" part="SessionHeader" message="tns:Header"/>
+    <soap:header use="literal" part="CallOptions" message="tns:Header"/>
+    <soap:header use="literal" part="DebuggingHeader" message="tns:Header"/>
+    <soap:header use="literal" part="AllowFieldTruncationHeader" message="tns:Header"/>
+    <soap:body use="literal" parts="parameters"/>
+   </input>
+   <output>
+    <soap:header use="literal" part="DebuggingInfo" message="tns:Header"/>
+    <soap:body use="literal"/>
+   </output>
+  </operation>
+ </binding>
+ <service name="BI_TR_LeadInfoSyncService">
+  <documentation></documentation>
+  <port binding="tns:BI_TR_LeadInfoSyncBinding" name="BI_TR_LeadInfoSync">
+   <soap:address location="https://na14-api.salesforce.com/services/Soap/class/ps/BI_TR_LeadInfoSync"/>
+  </port>
+ </service>
+</definitions>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE digester-rules PUBLIC
+   "-//Jakarta Apache //DTD digester-rules XML V1.0//EN"
+   "digester-rules-3.0.dtd">
+<digester-rules>
+	<!-- 在庫からの予約通知連絡(予約報告・変更・取消) -->
+	<pattern value="AllotmentBookingReport">
+		<object-create-rule classname="Rakujanconnect.dto.Travelxml" />
+		<set-properties-rule />
+		
+		<!-- 情報区分 -->
+		<pattern value="TransactionType">
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.TransactionType" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="DataFrom" methodname="setDataFrom" paramcount="0"/>
+			<call-method-rule pattern="DataClassification" methodname="setDataClassification" paramcount="0"/>
+			<call-method-rule pattern="DataID" methodname="setDataID" paramcount="0" />
+			<call-method-rule pattern="SystemDate" methodname="setSystemDate" paramcount="0"/>
+			<call-method-rule pattern="SystemDate" methodname="setSystemDate" paramcount="0"/>
+			<call-method-rule pattern="SystemTime" methodname="setSystemTime" paramcount="0"/>
+			
+			<set-next-rule methodname="addTransactionType" />
+		</pattern>
+		
+		<!-- 処理結果情報 -->
+		<pattern value="ResultInformation">
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.ResultInformation" />
+			<call-method-rule pattern="ResultCode" methodname="setResultCode" paramcount="0"/>
+			
+			<!-- 詳細情報 -->
+			<pattern value="DetailedInformation" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.DetailedInformation" />
+				<set-properties-rule />
+				
+				<call-method-rule pattern="ErrorCode" methodname="setErrorCode" paramcount="0"/>
+				<call-method-rule pattern="ErrorText" methodname="setErrorText" paramcount="0"/>
+				
+				<set-next-rule methodname="addDetailedInformation" />
+			</pattern>
+			
+			<set-next-rule methodname="addResultInformation"/> 
+		</pattern>
+		
+		<!-- 宿泊施設側情報 -->
+		<pattern value="AccommodationInformation">
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.AccommodationInformation" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="AccommodationArea" methodname="setAccommodationArea" paramcount="0"/>
+			<call-method-rule pattern="AccommodationName" methodname="setAccommodationName" paramcount="0"/>
+			<call-method-rule pattern="AccommodationCode" methodname="setAccommodationCode" paramcount="0"/>
+			<call-method-rule pattern="ChainName" methodname="setChainName" paramcount="0"/>
+			<call-method-rule pattern="AccommodationPersonInCharge" methodname="setAccommodationPersonInCharge" paramcount="0"/>
+			<call-method-rule pattern="AccommodationEmail" methodname="setAccommodationEmail" paramcount="0"/>
+			<call-method-rule pattern="AccommodationPhoneNumber" methodname="setAccommodationPhoneNumber" paramcount="0"/>
+			<call-method-rule pattern="AccommodationCPUAddress" methodname="setAccommodationCPUAddress" paramcount="0"/>
+			
+			<!-- 振込銀行情報 -->
+			<pattern value="BankList" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.BankInformation" />
+				<set-properties-rule />
+				
+				<call-method-rule pattern="BankName" methodname="setBankName" paramcount="0"/>
+				<call-method-rule pattern="BankAccountNumber" methodname="setBankAccountNumber" paramcount="0"/>
+				<call-method-rule pattern="BankBranchName" methodname="setBankBranchName" paramcount="0"/>
+				<call-method-rule pattern="BankAccountClassification" methodname="setBankAccountClassification" paramcount="0"/>
+				<call-method-rule pattern="BankAccountName" methodname="setBankAccountName" paramcount="0"/>
+				
+				<set-next-rule methodname="addBankList" />
+			</pattern>
+			
+			<set-next-rule methodname="addAccommodationInformation"/> 
+		</pattern>
+		
+		<!-- 旅行会社情報 -->
+		<pattern value="SalesOfficeInformation">
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.SalesOfficeInformation" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="SalesOfficeCompanyCode" methodname="setSalesOfficeCompanyCode" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeCompanyName" methodname="setSalesOfficeCompanyName" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeName" methodname="setSalesOfficeName" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeCode" methodname="setSalesOfficeCode" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficePersonInCharge" methodname="setSalesOfficePersonInCharge" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeEmail" methodname="setSalesOfficeEmail" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficePhoneNumber" methodname="setSalesOfficePhoneNumber" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeFaxNumber" methodname="setSalesOfficeFaxNumber" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeStateProvidence" methodname="setSalesOfficeStateProvidence" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeCityName" methodname="setSalesOfficeCityName" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeAddressLine" methodname="setSalesOfficeAddressLine" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeStreetNumber" methodname="setSalesOfficeStreetNumber" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficePostalCode" methodname="setSalesOfficePostalCode" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeRegisteredCategory" methodname="setSalesOfficeRegisteredCategory" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeLicenseNumber" methodname="setSalesOfficeLicenseNumber" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeRegisteredPrefecture" methodname="setSalesOfficeRegisteredPrefecture" paramcount="0"/>
+			<call-method-rule pattern="SalesOfficeCPUAddress" methodname="setSalesOfficeCPUAddress" paramcount="0"/>
+			<call-method-rule pattern="RetailerCompanyName" methodname="setRetailerCompanyName" paramcount="0"/>
+			<call-method-rule pattern="RetailerOfficeName" methodname="setRetailerOfficeName" paramcount="0"/>
+			<call-method-rule pattern="RetailerOfficeCode" methodname="setRetailerOfficeCode" paramcount="0"/>
+			<call-method-rule pattern="RetailerPersonInCharge" methodname="setRetailerPersonInCharge" paramcount="0"/>
+			<call-method-rule pattern="RetailerEmail" methodname="setRetailerEmail" paramcount="0"/>
+			<call-method-rule pattern="RetailerPhoneNumber" methodname="setRetailerPhoneNumber" paramcount="0"/>
+			<call-method-rule pattern="RetailerStateProvidence" methodname="setRetailerStateProvidence" paramcount="0"/>
+			<call-method-rule pattern="RetailerCityName" methodname="setRetailerCityName" paramcount="0"/>
+			<call-method-rule pattern="RetailerAddressLine" methodname="setRetailerAddressLine" paramcount="0"/>
+			<call-method-rule pattern="RetailerStreetNumber" methodname="setRetailerStreetNumber" paramcount="0"/>
+			<call-method-rule pattern="RetailerPostalCode" methodname="setRetailerPostalCode" paramcount="0"/>
+			<call-method-rule pattern="RetailerRegisteredCategory" methodname="setRetailerRegisteredCategory" paramcount="0"/>
+			<call-method-rule pattern="RetailerLicenseNumber" methodname="setRetailerLicenseNumber" paramcount="0"/>
+			<call-method-rule pattern="RetailerRegisteredPrefecture" methodname="setRetailerRegisteredPrefecture" paramcount="0"/>
+			
+			<set-next-rule methodname="addSalesOfficeInformation"/> 
+		</pattern>
+		
+		<!-- 04 基本宿泊情報 -->
+		<pattern value="BasicInformation" >
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.BasicInformation" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="TravelAgencyBookingNumber" methodname="setTravelAgencyBookingNumber" paramcount="0"/>
+			<call-method-rule pattern="TravelAgencyBookingDate" methodname="setTravelAgencyBookingDate" paramcount="0"/>
+			<call-method-rule pattern="TravelAgencyBookingTime" methodname="setTravelAgencyBookingTime" paramcount="0"/>
+			<call-method-rule pattern="TravelAgencyReportNumber" methodname="setTravelAgencyReportNumber" paramcount="0"/>
+			<call-method-rule pattern="AccommodationConfirmationNumber" methodname="setAccommodationConfirmationNumber" paramcount="0"/>
+			<call-method-rule pattern="GuestOrGroupNameSingleByte" methodname="setGuestOrGroupNameSingleByte" paramcount="0"/>
+			<call-method-rule pattern="GuestOrGroupNameDoubleByte" methodname="setGuestOrGroupNameDoubleByte" paramcount="0"/>
+			<call-method-rule pattern="GuestOrGroupNameKanjiName" methodname="setGuestOrGroupNameKanjiName" paramcount="0"/>
+			<call-method-rule pattern="GroupNameWelcomeBoard" methodname="setGroupNameWelcomeBoard" paramcount="0"/>
+			<call-method-rule pattern="CheckInDate" methodname="setCheckInDate" paramcount="0"/>
+			<call-method-rule pattern="CheckInTime" methodname="setCheckInTime" paramcount="0"/>
+			<call-method-rule pattern="CheckOutDate" methodname="setCheckOutDate" paramcount="0"/>
+			<call-method-rule pattern="CheckOutTime" methodname="setCheckOutTime" paramcount="0"/>
+			<call-method-rule pattern="Nights" methodname="setNights" paramcount="0"/>
+			<call-method-rule pattern="Transportaion" methodname="setTransportaion" paramcount="0"/>
+			<call-method-rule pattern="CoachCount" methodname="setCoachCount" paramcount="0"/>
+			<call-method-rule pattern="CoachCompany" methodname="setCoachCompany" paramcount="0"/>
+			<call-method-rule pattern="TotalRoomCount" methodname="setTotalRoomCount" paramcount="0"/>
+			<call-method-rule pattern="GrandTotalPaxCount" methodname="setGrandTotalPaxCount" paramcount="0"/>
+			<call-method-rule pattern="TotalPaxMaleCount" methodname="setTotalPaxMaleCount" paramcount="0"/>
+			<call-method-rule pattern="TotalPaxFemaleCount" methodname="setTotalPaxFemaleCount" paramcount="0"/>
+			<call-method-rule pattern="TotalChildA70Count" methodname="setTotalChildA70Count" paramcount="0"/>
+			<call-method-rule pattern="TotalChildB50Count" methodname="setTotalChildB50Count" paramcount="0"/>
+			<call-method-rule pattern="TotalChildC30Count" methodname="setTotalChildC30Count" paramcount="0"/>
+			<call-method-rule pattern="TotalChildDNoneCount" methodname="setTotalChildDNoneCount" paramcount="0"/>
+			<call-method-rule pattern="TotalChildECount" methodname="setTotalChildECount" paramcount="0"/>
+			<call-method-rule pattern="TotalChildFCount" methodname="setTotalChildFCount" paramcount="0"/>
+			<call-method-rule pattern="TotalChildOtherCount" methodname="setTotalChildOtherCount" paramcount="0"/>
+			<call-method-rule pattern="TotalTourConductorCount" methodname="setTotalTourConductorCount" paramcount="0"/>
+			<call-method-rule pattern="TotalCoachDriverCount" methodname="setTotalCoachDriverCount" paramcount="0"/>
+			<call-method-rule pattern="TotalGuideCount" methodname="setTotalGuideCount" paramcount="0"/>
+			<call-method-rule pattern="TypeOfGroup" methodname="setTypeOfGroup" paramcount="0"/>
+			<call-method-rule pattern="Status" methodname="setStatus" paramcount="0"/>
+			<call-method-rule pattern="PackageType" methodname="setPackageType" paramcount="0"/>
+			<call-method-rule pattern="PackagePlanName" methodname="setPackagePlanName" paramcount="0"/>
+			<call-method-rule pattern="PackagePlanCode" methodname="setPackagePlanCode" paramcount="0"/>
+			<call-method-rule pattern="PackagePlanContent" methodname="setPackagePlanContent" paramcount="0"/>
+			
+			<!-- オプション情報 -->
+			<pattern value="Option" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.Option" />
+				<set-properties-rule />
+				
+				<call-method-rule pattern="OptionDate" methodname="setOptionDate" paramcount="0"/>
+				<call-method-rule pattern="Name" methodname="setName" paramcount="0"/>
+				<call-method-rule pattern="NameRequest" methodname="setNameRequest" paramcount="0"/>
+				<call-method-rule pattern="OptionCount" methodname="setOptionCount" paramcount="0"/>
+				<call-method-rule pattern="OptionRate" methodname="setOptionRate" paramcount="0"/>
+				<call-method-rule pattern="OptionCode" methodname="setOptionCode" paramcount="0"/>
+				
+				<set-next-rule methodname="addOption" />
+			</pattern>
+			
+			<call-method-rule pattern="MealCondition" methodname="setMealCondition" paramcount="0"/>
+			<call-method-rule pattern="SpecificMealCondition" methodname="setSpecificMealCondition" paramcount="0"/>
+			<call-method-rule pattern="MealPlace" methodname="setMealPlace" paramcount="0"/>
+			<call-method-rule pattern="BanquetRoom" methodname="setBanquetRoom" paramcount="0"/>
+			<call-method-rule pattern="ModificationType" methodname="setModificationType" paramcount="0"/>
+			<call-method-rule pattern="ModificationPoint" methodname="setModificationPoint" paramcount="0"/>
+			<call-method-rule pattern="CancellationNumber" methodname="setCancellationNumber" paramcount="0"/>
+			<call-method-rule pattern="PreviousPlace" methodname="setPreviousPlace" paramcount="0"/>
+			
+			<call-method-rule pattern="PreviousAccommodationName" methodname="addPreviousAccommodationName" paramcount="1"/>
+			<call-param-rule pattern="PreviousAccommodationName" paramnumber="0" />
+			<call-method-rule pattern="SpecialServiceRequest" methodname="addSpecialServiceRequest" paramcount="1"/>
+			<call-param-rule pattern="SpecialServiceRequest" paramnumber="0" />
+
+			<call-method-rule pattern="OtherServiceInformation" methodname="setOtherServiceInformation" paramcount="0"/>
+			<call-method-rule pattern="FollowUpInformation" methodname="setFollowUpInformation" paramcount="0"/>
+
+			<set-next-rule methodname="addBasicInformation"/> 
+		</pattern>
+		
+		<!-- 基本情報 -->
+		<pattern value="BasicRateInformation" >
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.BasicRateInformation" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="RoomRateOrPersonalRate" methodname="setRoomRateOrPersonalRate" paramcount="0"/>
+			<call-method-rule pattern="TaxServiceFee" methodname="setTaxServiceFee" paramcount="0"/>
+			<call-method-rule pattern="Payment" methodname="setPayment" paramcount="0"/>
+			<call-method-rule pattern="BareNetRate" methodname="setBareNetRate" paramcount="0"/>
+			<call-method-rule pattern="CancellationCharge" methodname="setCancellationCharge" paramcount="0"/>
+			<call-method-rule pattern="CreditCardAuthority" methodname="setCreditCardAuthority" paramcount="0"/>
+			<call-method-rule pattern="CreditCardNumber" methodname="setCreditCardNumber" paramcount="0"/>
+			<call-method-rule pattern="ExpireDate" methodname="setExpireDate" paramcount="0"/>
+			<call-method-rule pattern="CardHolderName" methodname="setCardHolderName" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationCharge" methodname="setTotalAccommodationCharge" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationConsumptionTax" methodname="setTotalAccommodationConsumptionTax" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationHotSpringTax" methodname="setTotalAccommodationHotSpringTax" paramcount="0"/>
+
+			<call-method-rule pattern="TotalAccommodationHotelTax" methodname="addTotalAccommodationHotelTax" paramcount="1"/>
+			<call-param-rule pattern="TotalAccommodationHotelTax" paramnumber="0" />
+
+			<call-method-rule pattern="TotalAccommodationServiceFee" methodname="setTotalAccommodationServiceFee" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationBreakfastFee" methodname="setTotalAccommodationBreakfastFee" paramcount="0"/>
+
+			<call-method-rule pattern="TotalAccommodationOtherFee" methodname="addTotalAccommodationOtherFee" paramcount="1"/>
+			<call-param-rule pattern="TotalAccommodationOtherFee" paramnumber="0" />
+
+			<call-method-rule pattern="CommissionPercentage" methodname="setCommissionPercentage" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationCommissionAmount" methodname="setTotalAccommodationCommissionAmount" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationCommissionConsumptionTax" methodname="setTotalAccommodationCommissionConsumptionTax" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationChargeAfterCheckIn" methodname="setTotalAccommodationChargeAfterCheckIn" paramcount="0"/>
+			<call-method-rule pattern="TotalBalanceAfterCheckIn" methodname="setTotalBalanceAfterCheckIn" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationConsumptionAfterCheckIn" methodname="setTotalAccommodationConsumptionAfterCheckIn" paramcount="0"/>
+			<call-method-rule pattern="CancellationChargeAfterCheckIn" methodname="setCancellationChargeAfterCheckIn" paramcount="0"/>
+			<call-method-rule pattern="MembershipFee" methodname="setMembershipFee" paramcount="0"/>
+			<call-method-rule pattern="AdjustmentFee" methodname="setAdjustmentFee" paramcount="0"/>
+			
+			<!--  クーポン明細 -->
+			<pattern value="CouponList" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.CouponInformation" />
+				<set-properties-rule />
+				
+				<call-method-rule pattern="CouponAmount" methodname="setCouponAmount" paramcount="0"/>
+				<call-method-rule pattern="CouponType" methodname="setCouponType" paramcount="0"/>
+				<call-method-rule pattern="CouponNumber" methodname="setCouponNumber" paramcount="0"/>
+				<call-method-rule pattern="CouponIssueDate" methodname="setCouponIssueDate" paramcount="0"/>
+				
+				<set-next-rule methodname="addCouponList" />
+			</pattern>
+			
+			<set-next-rule methodname="addBasicRateInformation" />
+		</pattern>
+		
+		<!-- 個々の部屋とお客様情報 -->
+		<pattern value="RoomAndGuestInformation" >
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.RoomAndGuestInformation" />
+			<set-properties-rule />
+			
+			<!-- 個々の部屋とお客様リスト -->
+			<pattern value="RoomAndGuestList" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.RoomAndGuestList" />
+				<set-properties-rule />
+				
+				<!-- 部屋情報 -->
+				<pattern value="RoomInformation" >
+					<object-create-rule classname="Rakujanconnect.dto.ph3.sub.RoomInformation" />
+					<set-properties-rule />
+					
+					<call-method-rule pattern="RoomTypeCode" methodname="setRoomTypeCode" paramcount="0"/>
+					<call-method-rule pattern="RoomTypeName" methodname="setRoomTypeName" paramcount="0"/>
+					<call-method-rule pattern="RoomCategory" methodname="setRoomCategory" paramcount="0"/>
+					<call-method-rule pattern="ViewType" methodname="setViewType" paramcount="0"/>
+					<call-method-rule pattern="SmokingOrNonSmoking" methodname="setSmokingOrNonSmoking" paramcount="0"/>
+					<call-method-rule pattern="PerRoomPaxCount" methodname="setPerRoomPaxCount" paramcount="0"/>
+					<call-method-rule pattern="RoomPaxMaleCount" methodname="setRoomPaxMaleCount" paramcount="0"/>
+					<call-method-rule pattern="RoomPaxFemaleCount" methodname="setRoomPaxFemaleCount" paramcount="0"/>
+					<call-method-rule pattern="RoomChildA70Count" methodname="setRoomChildA70Count" paramcount="0"/>
+					<call-method-rule pattern="RoomChildB50Count" methodname="setRoomChildB50Count" paramcount="0"/>
+					<call-method-rule pattern="RoomChildC30Count" methodname="setRoomChildC30Count" paramcount="0"/>
+					<call-method-rule pattern="RoomChildDNoneCount" methodname="setRoomChildDNoneCount" paramcount="0"/>
+					<call-method-rule pattern="RoomChildECount" methodname="setRoomChildECount" paramcount="0"/>
+					<call-method-rule pattern="RoomChildFCount" methodname="setRoomChildFCount" paramcount="0"/>
+					<call-method-rule pattern="RoomChildOtherCount" methodname="setRoomChildOtherCount" paramcount="0"/>
+					<call-method-rule pattern="RoomByRoomStatus" methodname="setRoomByRoomStatus" paramcount="0"/>
+					<call-method-rule pattern="RoomByRoomConfirmationNumber" methodname="setRoomByRoomConfirmationNumber" paramcount="0"/>
+					
+					<call-method-rule pattern="Facilities" methodname="addFacilities" paramcount="1"/>
+					<call-param-rule pattern="Facilities" paramnumber="0" />
+					
+					<call-method-rule pattern="AssignedRoomNumber" methodname="setAssignedRoomNumber" paramcount="0"/>
+					
+					<call-method-rule pattern="RoomSpecialRequest" methodname="addRoomSpecialRequest" paramcount="1"/>
+					<call-param-rule pattern="RoomSpecialRequest" paramnumber="0" />
+					
+					<call-method-rule pattern="RoomTypeAgent" methodname="addRoomTypeAgent" paramcount="1"/>
+					<call-param-rule pattern="RoomTypeAgent" paramnumber="0" />
+					
+					<set-next-rule methodname="addRoomInformation" />
+				</pattern>
+				
+				<!-- 部屋料金情報 -->
+				<pattern value="RoomRateInformation" >
+					<object-create-rule classname="Rakujanconnect.dto.ph3.sub.RoomRateInformation" />
+					<set-properties-rule />
+					
+					<call-method-rule pattern="RoomDate" methodname="setRoomDate" paramcount="0"/>
+					<call-method-rule pattern="PerPaxRate" methodname="setPerPaxRate" paramcount="0"/>
+					<call-method-rule pattern="PerChildA70Rate" methodname="setPerChildA70Rate" paramcount="0"/>
+					<call-method-rule pattern="PerChildB50Rate" methodname="setPerChildB50Rate" paramcount="0"/>
+					<call-method-rule pattern="PerChildC30Rate" methodname="setPerChildC30Rate" paramcount="0"/>
+					<call-method-rule pattern="PerChildDRate" methodname="setPerChildDRate" paramcount="0"/>
+					<call-method-rule pattern="PerChildERate" methodname="setPerChildERate" paramcount="0"/>
+					<call-method-rule pattern="PerChildFRate" methodname="setPerChildFRate" paramcount="0"/>
+					<call-method-rule pattern="PerChildOtherRate" methodname="setPerChildOtherRate" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomRate" methodname="setTotalPerRoomRate" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomConsumptionTax" methodname="setTotalPerRoomConsumptionTax" paramcount="0"/>
+					<call-method-rule pattern="TotalRoomHotSpringTax" methodname="setTotalRoomHotSpringTax" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomHotelTax" methodname="setTotalPerRoomHotelTax" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomServiceFee" methodname="setTotalPerRoomServiceFee" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomBreakfastFee" methodname="setTotalPerRoomBreakfastFee" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomOtherFee" methodname="setTotalPerRoomOtherFee" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomCommissionAmount" methodname="setTotalPerRoomCommissionAmount" paramcount="0"/>
+					<call-method-rule pattern="TotalPerRoomCommissionConsumptionTax" methodname="setTotalPerRoomCommissionConsumptionTax" paramcount="0"/>
+
+					<!-- 料金詳細情報 -->
+					<pattern value="RoomRateDetailInformation" >
+						<object-create-rule classname="Rakujanconnect.dto.ph3.sub.RoomRateDetailInformation" />
+						<set-properties-rule />
+						
+						<call-method-rule pattern="RateCategory" methodname="setRateCategory" paramcount="0"/>
+						<call-method-rule pattern="RoomRate" methodname="setRoomRate" paramcount="0"/>
+						<call-method-rule pattern="RatePaxCount" methodname="setRatePaxCount" paramcount="0"/>
+						<call-method-rule pattern="RateDetailInformation" methodname="setRateDetailInformation" paramcount="0"/>
+						
+						<set-next-rule methodname="addRoomRateDetailInformation" />
+					</pattern>
+
+					<set-next-rule methodname="addRoomRateInformation" />
+				</pattern>
+				
+				<!-- お客様情報 -->
+				<pattern value="GuestInformation" >
+					<object-create-rule classname="Rakujanconnect.dto.ph3.sub.GuestInformation" />
+					<set-properties-rule />
+					
+					<!-- お客様情報リスト -->
+					<pattern value="GuestInformationList" >
+						<object-create-rule classname="Rakujanconnect.dto.ph3.sub.GuestInformationList" />
+						<set-properties-rule />
+						
+						<call-method-rule pattern="GuestNameSingleByte" methodname="setGuestNameSingleByte" paramcount="0"/>
+						<call-method-rule pattern="GuestSurName" methodname="setGuestSurName" paramcount="0"/>
+						<call-method-rule pattern="GuestGivenName" methodname="setGuestGivenName" paramcount="0"/>
+						<call-method-rule pattern="GuestMiddleName" methodname="setGuestMiddleName" paramcount="0"/>
+						<call-method-rule pattern="GuestNamePrefix" methodname="setGuestNamePrefix" paramcount="0"/>
+						<call-method-rule pattern="GuestKanjiName" methodname="setGuestKanjiName" paramcount="0"/>
+						<call-method-rule pattern="GuestGender" methodname="setGuestGender" paramcount="0"/>
+						<call-method-rule pattern="GuestAge" methodname="setGuestAge" paramcount="0"/>
+						<call-method-rule pattern="GuestDateOfBirth" methodname="setGuestDateOfBirth" paramcount="0"/>
+						<call-method-rule pattern="GuestType" methodname="setGuestType" paramcount="0"/>
+						<call-method-rule pattern="GuestShubetsu" methodname="setGuestShubetsu" paramcount="0"/>
+						<call-method-rule pattern="GuestPhoneNumber" methodname="setGuestPhoneNumber" paramcount="0"/>
+						<call-method-rule pattern="GuestEmergencyPhoneNumber" methodname="setGuestEmergencyPhoneNumber" paramcount="0"/>
+						<call-method-rule pattern="GuestEmail" methodname="setGuestEmail" paramcount="0"/>
+						<call-method-rule pattern="GuestCountry" methodname="setGuestCountry" paramcount="0"/>
+						<call-method-rule pattern="GuestStateProvidence" methodname="setGuestStateProvidence" paramcount="0"/>
+						<call-method-rule pattern="GuestCityName" methodname="setGuestCityName" paramcount="0"/>
+						<call-method-rule pattern="GuestAddressLine" methodname="setGuestAddressLine" paramcount="0"/>
+						<call-method-rule pattern="GuestStreetNumber" methodname="setGuestStreetNumber" paramcount="0"/>
+						<call-method-rule pattern="GuestPostalCode" methodname="setGuestPostalCode" paramcount="0"/>
+						<call-method-rule pattern="GuestBuildingName" methodname="setGuestBuildingName" paramcount="0"/>
+						<call-method-rule pattern="GuestFFPCarrier" methodname="setGuestFFPCarrier" paramcount="0"/>
+						<call-method-rule pattern="GuestFFPNumber" methodname="setGuestFFPNumber" paramcount="0"/>
+						<call-method-rule pattern="GuestCoachNumber" methodname="setGuestCoachNumber" paramcount="0"/>
+						
+						<call-method-rule pattern="SpecialInformation" methodname="addSpecialInformation" paramcount="1"/>
+						<call-param-rule pattern="SpecialInformation" paramnumber="0" />
+					
+						<set-next-rule methodname="addGuestInformationList" />
+					</pattern>
+					
+					<set-next-rule methodname="addGuestInformation" />
+				</pattern>
+				
+				<set-next-rule methodname="addRoomAndGuestList" />
+			</pattern>
+			
+			<set-next-rule methodname="addRoomAndGuestInformation" />
+		</pattern>
+		
+		<!-- 予約者・会員情報 -->
+		<pattern value="Member" >
+			<object-create-rule classname="Rakujanconnect.dto.ph3.sub.Member" />
+			<set-properties-rule />
+			
+			<call-method-rule pattern="UserName" methodname="setUserName" paramcount="0"/>
+			<call-method-rule pattern="UserKana" methodname="setUserKana" paramcount="0"/>
+			<call-method-rule pattern="UserTel" methodname="setUserTel" paramcount="0"/>
+			<call-method-rule pattern="UserMailAddr" methodname="setUserMailAddr" paramcount="0"/>
+			<call-method-rule pattern="UserZip" methodname="setUserZip" paramcount="0"/>
+			<call-method-rule pattern="UserAddr" methodname="setUserAddr" paramcount="0"/>
+			<call-method-rule pattern="UserCorp" methodname="setUserCorp" paramcount="0"/>
+			<call-method-rule pattern="UserDep" methodname="setUserDep" paramcount="0"/>
+			<call-method-rule pattern="UserID" methodname="setUserID" paramcount="0"/>
+			<call-method-rule pattern="VIPCode" methodname="setVIPCode" paramcount="0"/>
+			<call-method-rule pattern="PointCompanyName" methodname="setPointCompanyName" paramcount="0"/>
+			<call-method-rule pattern="PointName" methodname="setPointName" paramcount="0"/>
+			<call-method-rule pattern="UserGivingPoints" methodname="setUserGivingPoints" paramcount="0"/>
+			<call-method-rule pattern="UserUsePoints" methodname="setUserUsePoints" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationDecleasePoints" methodname="setTotalAccommodationDecleasePoints" paramcount="0"/>
+			<call-method-rule pattern="TotalAccommodationConsumptaionTax" methodname="setTotalAccommodationConsumptaionTax" paramcount="0"/>
+			<call-method-rule pattern="AmountClaimed" methodname="setAmountClaimed" paramcount="0"/>
+			<call-method-rule pattern="ChargeEquation" methodname="setChargeEquation" paramcount="0"/>
+			
+			<!-- 使用ポイントリスト -->
+			<pattern value="UserUsePointList" >
+				<object-create-rule classname="Rakujanconnect.dto.ph3.sub.UserUsePointList" />
+				<set-properties-rule />
+				
+				<call-method-rule pattern="PointName" methodname="setPointName" paramcount="0"/>
+				<call-method-rule pattern="UserUsePoint" methodname="setUserUsePoint" paramcount="0"/>
+				
+				<set-next-rule methodname="addUserUsePointList" />
+			</pattern>
+			
+			<set-next-rule methodname="addMember" />
+		</pattern>
+		
+	</pattern>
+</digester-rules>

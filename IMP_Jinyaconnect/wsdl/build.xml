@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="genSorce">
+	<taskdef resource="axis-tasks.properties">
+		<classpath>
+			<fileset dir="${basedir}/lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</classpath>
+	</taskdef>
+
+	<target name="genSorce">
+		<axis-wsdl2java output="${basedir}/src" testcase="false" verbose="true" url="${basedir}/partner.wsdl" />
+	</target>
+</project>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AllotmentBookingReport>
+  <TransactionType>
+    <DataFrom>RAKUJAN</DataFrom>
+    <DataClassification>NewBookReport</DataClassification>
+    <DataID>370</DataID>
+    <SystemDate>2012-08-27</SystemDate>
+    <SystemTime>13:26:26</SystemTime>
+  </TransactionType>
+  <ResultInformation>
+    <ResultCode>0</ResultCode>
+  </ResultInformation>
+  <AccommodationInformation>
+    <AccommodationName>元湯陣屋</AccommodationName>
+    <AccommodationCode>D01C2127</AccommodationCode>
+  </AccommodationInformation>
+  <SalesOfficeInformation>
+    <SalesOfficeCompanyCode>40</SalesOfficeCompanyCode>
+    <SalesOfficeCompanyName>予約プロ(達人)</SalesOfficeCompanyName>
+  </SalesOfficeInformation>
+  <BasicInformation>
+    <TravelAgencyBookingNumber>A00976828</TravelAgencyBookingNumber>
+    <TravelAgencyBookingDate>2012-06-28</TravelAgencyBookingDate>
+    <TravelAgencyBookingTime>14:04:00</TravelAgencyBookingTime>
+    <TravelAgencyReportNumber>370</TravelAgencyReportNumber>
+    <GuestOrGroupNameSingleByte>ｺｼﾞｮｳ ｹﾝｼﾞ</GuestOrGroupNameSingleByte>
+    <GuestOrGroupNameDoubleByte>こじょう　けんじ</GuestOrGroupNameDoubleByte>
+    <GuestOrGroupNameKanjiName>小城健二</GuestOrGroupNameKanjiName>
+    <CheckInDate>2012-08-02</CheckInDate>
+    <CheckInTime>15:30:00</CheckInTime>
+    <CheckOutDate>2012-08-03</CheckOutDate>
+    <Nights>1</Nights>
+    <TotalRoomCount>2</TotalRoomCount>
+    <GrandTotalPaxCount>4</GrandTotalPaxCount>
+    <TotalPaxMaleCount>2</TotalPaxMaleCount>
+    <TotalPaxFemaleCount>2</TotalPaxFemaleCount>
+    <Status>Reserved</Status>
+    <PackagePlanName>「出没!アド街ック天国」放映記念特別プラン【期間限定・お部屋おまかせ】</PackagePlanName>
+    <PackagePlanCode>513</PackagePlanCode>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>エステ＆炭酸泉90分コース</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>14000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>エステ＆炭酸泉120分コース</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>19000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>お土産（和牛シチュー　510g  2名様分)</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>2450</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>お土産（やまと豚の桜味噌漬け 20枚入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>3150</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>お土産（やまと豚の桜味噌漬け 10枚入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1575</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>お土産（陣屋どらやき　6個入）</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>960</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>【特選アラカルト】地元神奈川夢ポークのスペアリブ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1200</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>1000</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　200ｇ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>6200</OptionRate>
+    </Option>
+    <Option>
+      <OptionDate>2012-08-02</OptionDate>
+      <Name>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　100ｇ</Name>
+      <OptionCount>0</OptionCount>
+      <OptionRate>3200</OptionRate>
+    </Option>
+    <MealCondition>1night2meals</MealCondition>
+    <SpecificMealCondition>1泊2食</SpecificMealCondition>
+  </BasicInformation>
+  <BasicRateInformation>
+    <RoomRateOrPersonalRate>PersonalRate</RoomRateOrPersonalRate>
+    <TaxServiceFee>Unknown</TaxServiceFee>
+    <TotalAccommodationCharge>79200</TotalAccommodationCharge>
+  </BasicRateInformation>
+  <RoomAndGuestInformation>
+    <RoomAndGuestList>
+      <RoomInformation>
+        <RoomTypeCode>R015</RoomTypeCode>
+        <RoomTypeName>おまかせ客室</RoomTypeName>
+        <PerRoomPaxCount>2</PerRoomPaxCount>
+        <RoomPaxMaleCount>2</RoomPaxMaleCount>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　100ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　200ｇ</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RoomSpecialRequest>
+        <RoomSpecialRequest>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（陣屋どらやき　6個入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 10枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（やまと豚の桜味噌漬け 20枚入）</RoomSpecialRequest>
+        <RoomSpecialRequest>お土産（和牛シチュー　510g  2名様分)</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉120分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>エステ＆炭酸泉90分コース</RoomSpecialRequest>
+        <RoomSpecialRequest>(客室1)</RoomSpecialRequest>
+        <RoomTypeAgent>40</RoomTypeAgent>
+      </RoomInformation>
+      <RoomRateInformation>
+        <RoomDate>2012-08-02</RoomDate>
+        <PerPaxRate>19800</PerPaxRate>
+        <TotalPerRoomRate>39600</TotalPerRoomRate>
+        <RoomRateDetailInfomation>
+          <RoomRate>3200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　100ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>6200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】黒毛和牛ヒレ肉とサーロイン 盛り合わせステーキ　200ｇ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】陣屋ブレンド味噌に漬け込んだ豚漬け焼き</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1200</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>【特選アラカルト】地元神奈川夢ポークのスペアリブ</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>960</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（陣屋どらやき　6個入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>1575</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 10枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>3150</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（やまと豚の桜味噌漬け 20枚入）</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>2450</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>お土産（和牛シチュー　510g  2名様分)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>19000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉120分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RoomRate>14000</RoomRate>
+          <RatePaxCount>0</RatePaxCount>
+          <RateDetailInfomation>エステ＆炭酸泉90分コース</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+        <RoomRateDetailInfomation>
+          <RateCategory>1</RateCategory>
+          <RoomRate>19800</RoomRate>
+          <RatePaxCount>2</RatePaxCount>
+          <RateDetailInfomation>(客室1)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+      </RoomRateInformation>
+      <GuestInformation>
+        <GuestInformationList>
+          <GuestNameSingleByte>ｺｼﾞｮｳ ｹﾝｼﾞ</GuestNameSingleByte>
+          <GuestKanjiName>小城健二</GuestKanjiName>
+          <GuestGender>Unknown</GuestGender>
+          <GuestPhoneNumber>0426653595</GuestPhoneNumber>
+          <GuestEmergencyPhoneNumber>0426653595</GuestEmergencyPhoneNumber>
+          <GuestEmail>mckjkojo@tc4.so-net.ne.jp</GuestEmail>
+          <GuestStateProvidence>東京都八王子市狭間町1994-400</GuestStateProvidence>
+          <GuestPostalCode>1930941</GuestPostalCode>
+        </GuestInformationList>
+      </GuestInformation>
+    </RoomAndGuestList>
+    <RoomAndGuestList>
+      <RoomInformation>
+        <RoomTypeCode>R015</RoomTypeCode>
+        <RoomTypeName>おまかせ客室</RoomTypeName>
+        <PerRoomPaxCount>2</PerRoomPaxCount>
+        <RoomPaxMaleCount>2</RoomPaxMaleCount>
+        <RoomSpecialRequest>(客室2)</RoomSpecialRequest>
+        <RoomTypeAgent>40</RoomTypeAgent>
+      </RoomInformation>
+      <RoomRateInformation>
+        <RoomDate>2012-08-02</RoomDate>
+        <PerPaxRate>19800</PerPaxRate>
+        <TotalPerRoomRate>39600</TotalPerRoomRate>
+        <RoomRateDetailInfomation>
+          <RateCategory>1</RateCategory>
+          <RoomRate>19800</RoomRate>
+          <RatePaxCount>2</RatePaxCount>
+          <RateDetailInfomation>(客室2)</RateDetailInfomation>
+        </RoomRateDetailInfomation>
+      </RoomRateInformation>
+      <GuestInformation>
+        <GuestInformationList>
+          <GuestNameSingleByte>ｺｼﾞｮｳ ｹﾝｼﾞ</GuestNameSingleByte>
+          <GuestKanjiName>小城健二</GuestKanjiName>
+          <GuestGender>Unknown</GuestGender>
+          <GuestPhoneNumber>0426653595</GuestPhoneNumber>
+          <GuestEmergencyPhoneNumber>0426653595</GuestEmergencyPhoneNumber>
+          <GuestEmail>mckjkojo@tc4.so-net.ne.jp</GuestEmail>
+          <GuestStateProvidence>東京都八王子市狭間町1994-400</GuestStateProvidence>
+          <GuestPostalCode>1930941</GuestPostalCode>
+        </GuestInformationList>
+      </GuestInformation>
+    </RoomAndGuestList>
+  </RoomAndGuestInformation>
+  <Member>
+    <TotalAccommodationDecleasePoints>79200</TotalAccommodationDecleasePoints>
+    <AmountClaimed>79200</AmountClaimed>
+  </Member>
+</AllotmentBookingReport>
